@@ -145,139 +145,142 @@
       <button data-id="57" id="btn-merge-email" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-system-teal-100 text-system-teal-550 text-sm font-semibold hover:bg-system-teal-200 transition-colors border border-system-teal-300 cursor-pointer whitespace-nowrap">
         <i data-id="58" data-lucide="mail-plus" class="w-4 h-4"></i> Merge Emails
       </button>
-      <button data-id="59" id="btn-export-csv" class="flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium bg-background-200 text-foreground-700 hover:bg-background-250 transition-colors cursor-pointer whitespace-nowrap">
-        <i data-id="60" data-lucide="download" class="w-4 h-4"></i> Export CSV
+      <button data-id="59" id="btn-verify-emails" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-accent-150 text-accent-550 text-sm font-semibold hover:bg-accent-200 transition-colors border border-accent-250 cursor-pointer whitespace-nowrap">
+        <i data-id="60" data-lucide="shield-check" class="w-4 h-4"></i> Verify Emails
+      </button>
+      <button data-id="61" id="btn-export-csv" class="flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium bg-background-200 text-foreground-700 hover:bg-background-250 transition-colors cursor-pointer whitespace-nowrap">
+        <i data-id="62" data-lucide="download" class="w-4 h-4"></i> Export CSV
       </button>
     </div>
   </section>
 
   <!-- MAIN TABLE -->
-  <section data-id="61" class="px-4 md:px-8 pb-6 flex-1">
-    <div data-id="62" class="bg-white rounded-2xl overflow-hidden">
-      <div data-id="63" class="px-4 py-3 flex items-center justify-between border-b border-background-200">
-        <p data-id="64" id="results-count" class="text-xs font-medium text-foreground-450 uppercase tracking-wide"></p>
-        <div data-id="65" id="pagination-controls" class="flex items-center gap-2 text-sm"></div>
+  <section data-id="63" class="px-4 md:px-8 pb-6 flex-1">
+    <div data-id="64" class="bg-white rounded-2xl overflow-hidden">
+      <div data-id="65" class="px-4 py-3 flex items-center justify-between border-b border-background-200">
+        <p data-id="66" id="results-count" class="text-xs font-medium text-foreground-450 uppercase tracking-wide"></p>
+        <div data-id="67" id="pagination-controls" class="flex items-center gap-2 text-sm"></div>
       </div>
-      <div data-id="66" class="table-wrap">
-        <table data-id="67" class="w-full text-left text-sm">
-          <thead data-id="68" class="bg-background-150 text-xs font-medium uppercase tracking-wide text-foreground-450">
-            <tr data-id="69">
-              <th data-id="70" class="px-3 py-3 w-10" data-sort="index"># <i data-id="71" data-lucide="chevrons-up-down" class="w-3 h-3 inline"></i></th>
-              <th data-id="72" class="px-3 py-3 cursor-pointer whitespace-nowrap" data-sort="name">Business <i data-id="73" data-lucide="chevrons-up-down" class="w-3 h-3 inline"></i></th>
-              <th data-id="74" class="px-3 py-3 cursor-pointer whitespace-nowrap" data-sort="type">Type <i data-id="75" data-lucide="chevrons-up-down" class="w-3 h-3 inline"></i></th>
-              <th data-id="76" class="px-3 py-3 cursor-pointer whitespace-nowrap" data-sort="owner">Owner <i data-id="77" data-lucide="chevrons-up-down" class="w-3 h-3 inline"></i></th>
-              <th data-id="78" class="px-3 py-3 whitespace-nowrap">Phone</th>
-              <th data-id="79" class="px-3 py-3 whitespace-nowrap">Email</th>
-              <th data-id="80" class="px-3 py-3 w-10">Map</th>
-              <th data-id="81" class="px-3 py-3 cursor-pointer whitespace-nowrap" data-sort="status">Status <i data-id="82" data-lucide="chevrons-up-down" class="w-3 h-3 inline"></i></th>
-              <th data-id="83" class="px-3 py-3 cursor-pointer whitespace-nowrap" data-sort="priority">Priority <i data-id="84" data-lucide="chevrons-up-down" class="w-3 h-3 inline"></i></th>
-              <th data-id="85" class="px-3 py-3 cursor-pointer whitespace-nowrap" data-sort="followUpDate">Follow-Up <i data-id="86" data-lucide="chevrons-up-down" class="w-3 h-3 inline"></i></th>
-              <th data-id="87" class="px-3 py-3 cursor-pointer whitespace-nowrap" data-sort="lastContacted">Last Contact <i data-id="88" data-lucide="chevrons-up-down" class="w-3 h-3 inline"></i></th>
-              <th data-id="89" class="px-3 py-3 whitespace-nowrap">Notes</th>
+      <div data-id="68" class="table-wrap">
+        <table data-id="69" class="w-full text-left text-sm">
+          <thead data-id="70" class="bg-background-150 text-xs font-medium uppercase tracking-wide text-foreground-450">
+            <tr data-id="71">
+              <th data-id="72" class="px-3 py-3 w-10" data-sort="index"># <i data-id="73" data-lucide="chevrons-up-down" class="w-3 h-3 inline"></i></th>
+              <th data-id="74" class="px-3 py-3 cursor-pointer whitespace-nowrap" data-sort="name">Business <i data-id="75" data-lucide="chevrons-up-down" class="w-3 h-3 inline"></i></th>
+              <th data-id="76" class="px-3 py-3 cursor-pointer whitespace-nowrap" data-sort="type">Type <i data-id="77" data-lucide="chevrons-up-down" class="w-3 h-3 inline"></i></th>
+              <th data-id="78" class="px-3 py-3 cursor-pointer whitespace-nowrap" data-sort="owner">Owner <i data-id="79" data-lucide="chevrons-up-down" class="w-3 h-3 inline"></i></th>
+              <th data-id="80" class="px-3 py-3 whitespace-nowrap">Phone</th>
+              <th data-id="81" class="px-3 py-3 whitespace-nowrap">Email</th>
+              <th data-id="82" class="px-3 py-3 w-10">Map</th>
+              <th data-id="83" class="px-3 py-3 cursor-pointer whitespace-nowrap" data-sort="status">Status <i data-id="84" data-lucide="chevrons-up-down" class="w-3 h-3 inline"></i></th>
+              <th data-id="85" class="px-3 py-3 cursor-pointer whitespace-nowrap" data-sort="priority">Priority <i data-id="86" data-lucide="chevrons-up-down" class="w-3 h-3 inline"></i></th>
+              <th data-id="87" class="px-3 py-3 cursor-pointer whitespace-nowrap" data-sort="followUpDate">Follow-Up <i data-id="88" data-lucide="chevrons-up-down" class="w-3 h-3 inline"></i></th>
+              <th data-id="89" class="px-3 py-3 cursor-pointer whitespace-nowrap" data-sort="lastContacted">Last Contact <i data-id="90" data-lucide="chevrons-up-down" class="w-3 h-3 inline"></i></th>
+              <th data-id="91" class="px-3 py-3 whitespace-nowrap">Notes</th>
             </tr>
           </thead>
-          <tbody data-id="90" id="table-body"></tbody>
+          <tbody data-id="92" id="table-body"></tbody>
         </table>
       </div>
-      <div data-id="91" id="empty-state" class="hidden px-8 py-16 text-center">
-        <i data-id="92" data-lucide="search-x" class="w-12 h-12 mx-auto text-foreground-300 mb-3"></i>
-        <p data-id="93" class="text-foreground-450 font-medium">No leads match your filters</p>
-        <p data-id="94" class="text-xs text-foreground-350 mt-1">Try adjusting your search or filter criteria</p>
+      <div data-id="93" id="empty-state" class="hidden px-8 py-16 text-center">
+        <i data-id="94" data-lucide="search-x" class="w-12 h-12 mx-auto text-foreground-300 mb-3"></i>
+        <p data-id="95" class="text-foreground-450 font-medium">No leads match your filters</p>
+        <p data-id="96" class="text-xs text-foreground-350 mt-1">Try adjusting your search or filter criteria</p>
       </div>
     </div>
   </section>
 
   <!-- DETAIL/EDIT MODAL -->
-  <div data-id="95" id="detail-modal" class="modal-overlay">
-    <div data-id="96" class="modal-content">
-      <div data-id="97" class="bg-navy-700 text-white px-6 py-4 rounded-t-[1.25rem] flex items-center justify-between">
-        <h2 data-id="98" id="modal-title" class="text-lg font-semibold truncate"></h2>
-        <button data-id="99" id="modal-close" class="p-1 hover:bg-navy-800 rounded-lg cursor-pointer"><i data-id="100" data-lucide="x" class="w-5 h-5"></i></button>
+  <div data-id="97" id="detail-modal" class="modal-overlay">
+    <div data-id="98" class="modal-content">
+      <div data-id="99" class="bg-navy-700 text-white px-6 py-4 rounded-t-[1.25rem] flex items-center justify-between">
+        <h2 data-id="100" id="modal-title" class="text-lg font-semibold truncate"></h2>
+        <button data-id="101" id="modal-close" class="p-1 hover:bg-navy-800 rounded-lg cursor-pointer"><i data-id="102" data-lucide="x" class="w-5 h-5"></i></button>
       </div>
-      <div data-id="101" class="p-6 space-y-5">
-        <div data-id="102" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div data-id="103">
-            <label data-id="104" class="text-xs font-medium uppercase tracking-wide text-foreground-450">Business Type</label>
-            <p data-id="105" id="modal-type" class="text-sm text-foreground-800 mt-0.5 font-medium"></p>
+      <div data-id="103" class="p-6 space-y-5">
+        <div data-id="104" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div data-id="105">
+            <label data-id="106" class="text-xs font-medium uppercase tracking-wide text-foreground-450">Business Type</label>
+            <p data-id="107" id="modal-type" class="text-sm text-foreground-800 mt-0.5 font-medium"></p>
           </div>
-          <div data-id="106">
-            <label data-id="107" class="text-xs font-medium uppercase tracking-wide text-foreground-450">Owner</label>
-            <p data-id="108" id="modal-owner" class="text-sm text-foreground-800 mt-0.5 font-medium"></p>
+          <div data-id="108">
+            <label data-id="109" class="text-xs font-medium uppercase tracking-wide text-foreground-450">Owner</label>
+            <p data-id="110" id="modal-owner" class="text-sm text-foreground-800 mt-0.5 font-medium"></p>
           </div>
-          <div data-id="109">
-            <label data-id="110" class="text-xs font-medium uppercase tracking-wide text-foreground-450">Address</label>
-            <p data-id="111" id="modal-address" class="text-sm text-foreground-800 mt-0.5"></p>
-            <a data-id="112" id="modal-gps" href="#" target="_blank" rel="noopener" class="text-xs text-accent-550 hover:underline flex items-center gap-1 mt-1"><i data-id="113" data-lucide="map-pin" class="w-3 h-3"></i> Open in Maps</a>
+          <div data-id="111">
+            <label data-id="112" class="text-xs font-medium uppercase tracking-wide text-foreground-450">Address</label>
+            <p data-id="113" id="modal-address" class="text-sm text-foreground-800 mt-0.5"></p>
+            <a data-id="114" id="modal-gps" href="#" target="_blank" rel="noopener" class="text-xs text-accent-550 hover:underline flex items-center gap-1 mt-1"><i data-id="115" data-lucide="map-pin" class="w-3 h-3"></i> Open in Maps</a>
           </div>
-          <div data-id="114">
-            <label data-id="115" class="text-xs font-medium uppercase tracking-wide text-foreground-450">Phone</label>
-            <a data-id="116" id="modal-phone" href="#" class="text-sm text-accent-550 hover:underline block mt-0.5 font-medium"></a>
+          <div data-id="116">
+            <label data-id="117" class="text-xs font-medium uppercase tracking-wide text-foreground-450">Phone</label>
+            <a data-id="118" id="modal-phone" href="#" class="text-sm text-accent-550 hover:underline block mt-0.5 font-medium"></a>
           </div>
-          <div data-id="117" class="md:col-span-2">
-            <label data-id="118" class="text-xs font-medium uppercase tracking-wide text-foreground-450">Email</label>
-            <a data-id="119" id="modal-email" href="#" class="text-sm text-accent-550 hover:underline block mt-0.5"></a>
-            <button data-id="120" id="modal-send-script" class="mt-2 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-navy-700 text-white text-xs font-semibold hover:bg-navy-800 transition-colors cursor-pointer">
-              <i data-id="121" data-lucide="send" class="w-3 h-3"></i> Compose with Script → Copy Fields
+          <div data-id="119" class="md:col-span-2">
+            <label data-id="120" class="text-xs font-medium uppercase tracking-wide text-foreground-450">Email</label>
+            <a data-id="121" id="modal-email" href="#" class="text-sm text-accent-550 hover:underline block mt-0.5"></a>
+            <button data-id="122" id="modal-send-script" class="mt-2 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-navy-700 text-white text-xs font-semibold hover:bg-navy-800 transition-colors cursor-pointer">
+              <i data-id="123" data-lucide="send" class="w-3 h-3"></i> Compose with Script → Copy Fields
             </button>
           </div>
         </div>
-        <hr data-id="122" class="border-background-200" />
-        <div data-id="123" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div data-id="124">
-            <label data-id="125" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Status</label>
-            <select data-id="126" id="modal-status" class="inline-select w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700 cursor-pointer">
-              <option data-id="127" value="New">New</option>
-              <option data-id="128" value="Contacted">Contacted</option>
-              <option data-id="129" value="Follow-Up">Follow-Up</option>
-              <option data-id="130" value="Proposal Sent">Proposal Sent</option>
-              <option data-id="131" value="Closed – Won">Closed – Won</option>
-              <option data-id="132" value="Closed – Lost">Closed – Lost</option>
+        <hr data-id="124" class="border-background-200" />
+        <div data-id="125" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div data-id="126">
+            <label data-id="127" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Status</label>
+            <select data-id="128" id="modal-status" class="inline-select w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700 cursor-pointer">
+              <option data-id="129" value="New">New</option>
+              <option data-id="130" value="Contacted">Contacted</option>
+              <option data-id="131" value="Follow-Up">Follow-Up</option>
+              <option data-id="132" value="Proposal Sent">Proposal Sent</option>
+              <option data-id="133" value="Closed – Won">Closed – Won</option>
+              <option data-id="134" value="Closed – Lost">Closed – Lost</option>
             </select>
           </div>
-          <div data-id="133">
-            <label data-id="134" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Priority</label>
-            <select data-id="135" id="modal-priority" class="inline-select w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700 cursor-pointer">
-              <option data-id="136" value="High">🔴 High</option>
-              <option data-id="137" value="Medium">🟡 Medium</option>
-              <option data-id="138" value="Low">🟢 Low</option>
+          <div data-id="135">
+            <label data-id="136" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Priority</label>
+            <select data-id="137" id="modal-priority" class="inline-select w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700 cursor-pointer">
+              <option data-id="138" value="High">🔴 High</option>
+              <option data-id="139" value="Medium">🟡 Medium</option>
+              <option data-id="140" value="Low">🟢 Low</option>
             </select>
           </div>
-          <div data-id="139">
-            <label data-id="140" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Contact Method</label>
-            <select data-id="141" id="modal-contact-method" class="inline-select w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700 cursor-pointer">
-              <option data-id="142" value="">— Select —</option>
-              <option data-id="143" value="Phone">Phone</option>
-              <option data-id="144" value="Email">Email</option>
-              <option data-id="145" value="In-Person">In-Person</option>
-              <option data-id="146" value="Text">Text</option>
+          <div data-id="141">
+            <label data-id="142" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Contact Method</label>
+            <select data-id="143" id="modal-contact-method" class="inline-select w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700 cursor-pointer">
+              <option data-id="144" value="">— Select —</option>
+              <option data-id="145" value="Phone">Phone</option>
+              <option data-id="146" value="Email">Email</option>
+              <option data-id="147" value="In-Person">In-Person</option>
+              <option data-id="148" value="Text">Text</option>
             </select>
           </div>
-          <div data-id="147">
-            <label data-id="148" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Follow-Up Date</label>
-            <input data-id="149" type="date" id="modal-followup" class="w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700" />
+          <div data-id="149">
+            <label data-id="150" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Follow-Up Date</label>
+            <input data-id="151" type="date" id="modal-followup" class="w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700" />
           </div>
-          <div data-id="150">
-            <label data-id="151" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Last Contacted</label>
-            <input data-id="152" type="date" id="modal-last-contacted" class="w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700" />
+          <div data-id="152">
+            <label data-id="153" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Last Contacted</label>
+            <input data-id="154" type="date" id="modal-last-contacted" class="w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700" />
           </div>
         </div>
-        <div data-id="153">
-          <label data-id="154" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Notes</label>
-          <textarea data-id="155" id="modal-notes" rows="3" class="w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700 resize-y" placeholder="Add notes about this lead…"></textarea>
+        <div data-id="155">
+          <label data-id="156" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Notes</label>
+          <textarea data-id="157" id="modal-notes" rows="3" class="w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700 resize-y" placeholder="Add notes about this lead…"></textarea>
         </div>
         <!-- Activity Log -->
-        <div data-id="156" id="modal-activity-log" class="hidden">
-          <label data-id="157" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-2">Recent Activity</label>
-          <div data-id="158" id="modal-activity-list" class="space-y-1.5"></div>
+        <div data-id="158" id="modal-activity-log" class="hidden">
+          <label data-id="159" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-2">Recent Activity</label>
+          <div data-id="160" id="modal-activity-list" class="space-y-1.5"></div>
         </div>
-        <div data-id="159" class="flex flex-col sm:flex-row gap-3 pt-2">
-          <button data-id="160" id="modal-mark-contacted" class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium bg-system-green-200 text-system-green-600 hover:bg-system-green-300 transition-colors cursor-pointer flex-1">
-            <i data-id="161" data-lucide="check-circle" class="w-4 h-4"></i> Mark Contacted Today
+        <div data-id="161" class="flex flex-col sm:flex-row gap-3 pt-2">
+          <button data-id="162" id="modal-mark-contacted" class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium bg-system-green-200 text-system-green-600 hover:bg-system-green-300 transition-colors cursor-pointer flex-1">
+            <i data-id="163" data-lucide="check-circle" class="w-4 h-4"></i> Mark Contacted Today
           </button>
-          <button data-id="162" id="modal-save" class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium bg-accent-450 text-white hover:bg-accent-550 transition-colors cursor-pointer flex-1">
-            <i data-id="163" data-lucide="save" class="w-4 h-4"></i> Save Changes
+          <button data-id="164" id="modal-save" class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium bg-accent-450 text-white hover:bg-accent-550 transition-colors cursor-pointer flex-1">
+            <i data-id="165" data-lucide="save" class="w-4 h-4"></i> Save Changes
           </button>
-          <button data-id="164" id="modal-cancel" class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium bg-background-200 text-foreground-700 hover:bg-background-250 transition-colors cursor-pointer">
+          <button data-id="166" id="modal-cancel" class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium bg-background-200 text-foreground-700 hover:bg-background-250 transition-colors cursor-pointer">
             Cancel
           </button>
         </div>
@@ -286,71 +289,71 @@
   </div>
 
   <!-- ADD LEAD MODAL -->
-  <div data-id="165" id="add-modal" class="modal-overlay">
-    <div data-id="166" class="modal-content">
-      <div data-id="167" class="bg-navy-700 text-white px-6 py-4 rounded-t-[1.25rem] flex items-center justify-between">
-        <h2 data-id="168" class="text-lg font-semibold">Add New Lead</h2>
-        <button data-id="169" id="add-modal-close" class="p-1 hover:bg-navy-800 rounded-lg cursor-pointer"><i data-id="170" data-lucide="x" class="w-5 h-5"></i></button>
+  <div data-id="167" id="add-modal" class="modal-overlay">
+    <div data-id="168" class="modal-content">
+      <div data-id="169" class="bg-navy-700 text-white px-6 py-4 rounded-t-[1.25rem] flex items-center justify-between">
+        <h2 data-id="170" class="text-lg font-semibold">Add New Lead</h2>
+        <button data-id="171" id="add-modal-close" class="p-1 hover:bg-navy-800 rounded-lg cursor-pointer"><i data-id="172" data-lucide="x" class="w-5 h-5"></i></button>
       </div>
-      <div data-id="171" class="p-6 space-y-4">
-        <div data-id="172" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div data-id="173" class="md:col-span-2">
-            <label data-id="174" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Business Name *</label>
-            <input data-id="175" type="text" id="add-name" class="w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700" />
+      <div data-id="173" class="p-6 space-y-4">
+        <div data-id="174" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div data-id="175" class="md:col-span-2">
+            <label data-id="176" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Business Name *</label>
+            <input data-id="177" type="text" id="add-name" class="w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700" />
           </div>
-          <div data-id="176" class="md:col-span-2">
-            <label data-id="177" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Address</label>
-            <input data-id="178" type="text" id="add-address" class="w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700" />
+          <div data-id="178" class="md:col-span-2">
+            <label data-id="179" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Address</label>
+            <input data-id="180" type="text" id="add-address" class="w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700" />
           </div>
-          <div data-id="179" class="md:col-span-2">
-            <label data-id="180" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">GPS Link</label>
-            <input data-id="181" type="url" id="add-gps" class="w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700" placeholder="https://maps.google.com/?q=..." />
+          <div data-id="181" class="md:col-span-2">
+            <label data-id="182" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">GPS Link</label>
+            <input data-id="183" type="url" id="add-gps" class="w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700" placeholder="https://maps.google.com/?q=..." />
           </div>
-          <div data-id="182">
-            <label data-id="183" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Type</label>
-            <input data-id="184" type="text" id="add-type" class="w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700" />
+          <div data-id="184">
+            <label data-id="185" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Type</label>
+            <input data-id="186" type="text" id="add-type" class="w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700" />
           </div>
-          <div data-id="185">
-            <label data-id="186" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Owner</label>
-            <input data-id="187" type="text" id="add-owner" class="w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700" />
+          <div data-id="187">
+            <label data-id="188" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Owner</label>
+            <input data-id="189" type="text" id="add-owner" class="w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700" />
           </div>
-          <div data-id="188">
-            <label data-id="189" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Phone</label>
-            <input data-id="190" type="tel" id="add-phone" class="w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700" />
+          <div data-id="190">
+            <label data-id="191" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Phone</label>
+            <input data-id="192" type="tel" id="add-phone" class="w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700" />
           </div>
-          <div data-id="191">
-            <label data-id="192" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Email</label>
-            <input data-id="193" type="email" id="add-email" class="w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700" />
+          <div data-id="193">
+            <label data-id="194" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Email</label>
+            <input data-id="195" type="email" id="add-email" class="w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700" />
           </div>
-          <div data-id="194">
-            <label data-id="195" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Status</label>
-            <select data-id="196" id="add-status" class="inline-select w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700 cursor-pointer">
-              <option data-id="197" value="New">New</option>
-              <option data-id="198" value="Contacted">Contacted</option>
-              <option data-id="199" value="Follow-Up">Follow-Up</option>
-              <option data-id="200" value="Proposal Sent">Proposal Sent</option>
-              <option data-id="201" value="Closed – Won">Closed – Won</option>
-              <option data-id="202" value="Closed – Lost">Closed – Lost</option>
+          <div data-id="196">
+            <label data-id="197" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Status</label>
+            <select data-id="198" id="add-status" class="inline-select w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700 cursor-pointer">
+              <option data-id="199" value="New">New</option>
+              <option data-id="200" value="Contacted">Contacted</option>
+              <option data-id="201" value="Follow-Up">Follow-Up</option>
+              <option data-id="202" value="Proposal Sent">Proposal Sent</option>
+              <option data-id="203" value="Closed – Won">Closed – Won</option>
+              <option data-id="204" value="Closed – Lost">Closed – Lost</option>
             </select>
           </div>
-          <div data-id="203">
-            <label data-id="204" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Priority</label>
-            <select data-id="205" id="add-priority" class="inline-select w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700 cursor-pointer">
-              <option data-id="206" value="High">🔴 High</option>
-              <option data-id="207" value="Medium" selected>🟡 Medium</option>
-              <option data-id="208" value="Low">🟢 Low</option>
+          <div data-id="205">
+            <label data-id="206" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Priority</label>
+            <select data-id="207" id="add-priority" class="inline-select w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700 cursor-pointer">
+              <option data-id="208" value="High">🔴 High</option>
+              <option data-id="209" value="Medium" selected>🟡 Medium</option>
+              <option data-id="210" value="Low">🟢 Low</option>
             </select>
           </div>
-          <div data-id="209" class="md:col-span-2">
-            <label data-id="210" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Notes</label>
-            <textarea data-id="211" id="add-notes" rows="2" class="w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700 resize-y"></textarea>
+          <div data-id="211" class="md:col-span-2">
+            <label data-id="212" class="text-xs font-medium uppercase tracking-wide text-foreground-450 block mb-1">Notes</label>
+            <textarea data-id="213" id="add-notes" rows="2" class="w-full rounded-xl bg-background-150 text-sm px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-300 text-foreground-700 resize-y"></textarea>
           </div>
         </div>
-        <div data-id="212" class="flex gap-3 pt-2">
-          <button data-id="213" id="add-save" class="flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium bg-accent-450 text-white hover:bg-accent-550 transition-colors cursor-pointer flex-1">
-            <i data-id="214" data-lucide="plus" class="w-4 h-4"></i> Add Lead
+        <div data-id="214" class="flex gap-3 pt-2">
+          <button data-id="215" id="add-save" class="flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium bg-accent-450 text-white hover:bg-accent-550 transition-colors cursor-pointer flex-1">
+            <i data-id="216" data-lucide="plus" class="w-4 h-4"></i> Add Lead
           </button>
-          <button data-id="215" id="add-cancel" class="flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium bg-background-200 text-foreground-700 hover:bg-background-250 transition-colors cursor-pointer">
+          <button data-id="217" id="add-cancel" class="flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium bg-background-200 text-foreground-700 hover:bg-background-250 transition-colors cursor-pointer">
             Cancel
           </button>
         </div>
@@ -359,201 +362,201 @@
   </div>
 
   <!-- NOTES MODAL -->
-  <div data-id="216" id="notes-modal" class="modal-overlay">
-    <div data-id="217" class="modal-content" style="max-width:480px;">
-      <div data-id="218" class="bg-navy-700 text-white px-6 py-4 rounded-t-[1.25rem] flex items-center justify-between">
-        <h2 data-id="219" id="notes-modal-title" class="text-lg font-semibold truncate">Notes</h2>
-        <button data-id="220" id="notes-modal-close" class="p-1 hover:bg-navy-800 rounded-lg cursor-pointer"><i data-id="221" data-lucide="x" class="w-5 h-5"></i></button>
+  <div data-id="218" id="notes-modal" class="modal-overlay">
+    <div data-id="219" class="modal-content" style="max-width:480px;">
+      <div data-id="220" class="bg-navy-700 text-white px-6 py-4 rounded-t-[1.25rem] flex items-center justify-between">
+        <h2 data-id="221" id="notes-modal-title" class="text-lg font-semibold truncate">Notes</h2>
+        <button data-id="222" id="notes-modal-close" class="p-1 hover:bg-navy-800 rounded-lg cursor-pointer"><i data-id="223" data-lucide="x" class="w-5 h-5"></i></button>
       </div>
-      <div data-id="222" class="p-6">
-        <p data-id="223" id="notes-modal-text" class="text-sm text-foreground-700 whitespace-pre-wrap"></p>
+      <div data-id="224" class="p-6">
+        <p data-id="225" id="notes-modal-text" class="text-sm text-foreground-700 whitespace-pre-wrap"></p>
       </div>
     </div>
   </div>
 
   <!-- ===== MERGE EMAIL MODAL ===== -->
-  <div data-id="224" id="merge-modal" class="modal-overlay">
-    <div data-id="225" class="bg-white rounded-3xl shadow-2xl w-full max-w-2xl mx-4 flex flex-col max-h-[90vh] overflow-hidden">
+  <div data-id="226" id="merge-modal" class="modal-overlay">
+    <div data-id="227" class="bg-white rounded-3xl shadow-2xl w-full max-w-2xl mx-4 flex flex-col max-h-[90vh] overflow-hidden">
       <!-- Header -->
-      <div data-id="226" class="flex items-center justify-between px-6 py-4 border-b border-background-200">
-        <div data-id="227" class="flex items-center gap-2">
-          <i data-id="228" data-lucide="mail-plus" class="w-5 h-5 text-system-teal-550"></i>
-          <h2 data-id="229" class="text-lg font-bold text-foreground-800">Merge Emails</h2>
+      <div data-id="228" class="flex items-center justify-between px-6 py-4 border-b border-background-200">
+        <div data-id="229" class="flex items-center gap-2">
+          <i data-id="230" data-lucide="mail-plus" class="w-5 h-5 text-system-teal-550"></i>
+          <h2 data-id="231" class="text-lg font-bold text-foreground-800">Merge Emails</h2>
         </div>
-        <button data-id="230" id="merge-modal-close" class="w-8 h-8 rounded-full bg-background-200 hover:bg-background-250 flex items-center justify-center text-foreground-500 transition-colors cursor-pointer">
-          <i data-id="231" data-lucide="x" class="w-4 h-4"></i>
+        <button data-id="232" id="merge-modal-close" class="w-8 h-8 rounded-full bg-background-200 hover:bg-background-250 flex items-center justify-center text-foreground-500 transition-colors cursor-pointer">
+          <i data-id="233" data-lucide="x" class="w-4 h-4"></i>
         </button>
       </div>
 
       <!-- Tabs -->
-      <div data-id="232" class="flex border-b border-background-200 px-6">
-        <button data-id="233" id="merge-tab-single" class="merge-tab px-5 py-3 text-sm font-semibold border-b-2 transition-colors border-system-teal-550 text-system-teal-550 cursor-pointer">
+      <div data-id="234" class="flex border-b border-background-200 px-6">
+        <button data-id="235" id="merge-tab-single" class="merge-tab px-5 py-3 text-sm font-semibold border-b-2 transition-colors border-system-teal-550 text-system-teal-550 cursor-pointer">
           Single Address
         </button>
-        <button data-id="234" id="merge-tab-bulk" class="merge-tab px-5 py-3 text-sm font-semibold border-b-2 transition-colors border-transparent text-foreground-450 hover:text-foreground-700 cursor-pointer">
+        <button data-id="236" id="merge-tab-bulk" class="merge-tab px-5 py-3 text-sm font-semibold border-b-2 transition-colors border-transparent text-foreground-450 hover:text-foreground-700 cursor-pointer">
           Bulk Addresses
         </button>
-        <button data-id="235" id="merge-tab-script" class="merge-tab px-5 py-3 text-sm font-semibold border-b-2 transition-colors border-transparent text-foreground-450 hover:text-foreground-700 cursor-pointer flex items-center gap-1.5">
-          <i data-id="236" data-lucide="file-text" class="w-3.5 h-3.5"></i> Email Script
+        <button data-id="237" id="merge-tab-script" class="merge-tab px-5 py-3 text-sm font-semibold border-b-2 transition-colors border-transparent text-foreground-450 hover:text-foreground-700 cursor-pointer flex items-center gap-1.5">
+          <i data-id="238" data-lucide="file-text" class="w-3.5 h-3.5"></i> Email Script
         </button>
       </div>
 
       <!-- ---- SINGLE PANEL ---- -->
-      <div data-id="237" id="merge-panel-single" class="flex flex-col gap-4 p-6 overflow-y-auto">
-        <p data-id="238" class="text-xs text-foreground-450">Search for a lead and copy or open their individual email address.</p>
-        <input data-id="239" id="merge-single-search" type="text" placeholder="Search by name, type, or email…" class="w-full rounded-xl border border-background-250 bg-background-100 px-4 py-2.5 text-sm text-foreground-800 focus:outline-none focus:ring-2 focus:ring-system-teal-300" />
-        <div data-id="240" id="merge-single-list" class="flex flex-col gap-1 max-h-56 overflow-y-auto"></div>
+      <div data-id="239" id="merge-panel-single" class="flex flex-col gap-4 p-6 overflow-y-auto">
+        <p data-id="240" class="text-xs text-foreground-450">Search for a lead and copy or open their individual email address.</p>
+        <input data-id="241" id="merge-single-search" type="text" placeholder="Search by name, type, or email…" class="w-full rounded-xl border border-background-250 bg-background-100 px-4 py-2.5 text-sm text-foreground-800 focus:outline-none focus:ring-2 focus:ring-system-teal-300" />
+        <div data-id="242" id="merge-single-list" class="flex flex-col gap-1 max-h-56 overflow-y-auto"></div>
         <!-- Selected result -->
-        <div data-id="241" id="merge-single-result" class="hidden bg-system-teal-100 border border-system-teal-300 rounded-2xl p-4 flex flex-col gap-3">
-          <div data-id="242">
-            <div data-id="243" class="text-xs text-system-teal-600 font-semibold uppercase tracking-wide mb-1">Selected</div>
-            <div data-id="244" id="merge-single-name" class="text-sm font-bold text-foreground-800"></div>
-            <div data-id="245" id="merge-single-type" class="text-xs text-foreground-500"></div>
+        <div data-id="243" id="merge-single-result" class="hidden bg-system-teal-100 border border-system-teal-300 rounded-2xl p-4 flex flex-col gap-3">
+          <div data-id="244">
+            <div data-id="245" class="text-xs text-system-teal-600 font-semibold uppercase tracking-wide mb-1">Selected</div>
+            <div data-id="246" id="merge-single-name" class="text-sm font-bold text-foreground-800"></div>
+            <div data-id="247" id="merge-single-type" class="text-xs text-foreground-500"></div>
           </div>
-          <div data-id="246" class="flex items-center gap-2 bg-white rounded-xl px-3 py-2 border border-system-teal-200">
-            <i data-id="247" data-lucide="mail" class="w-4 h-4 text-system-teal-550 flex-shrink-0"></i>
-            <span data-id="248" id="merge-single-email-display" class="text-sm text-foreground-800 flex-1 font-mono"></span>
+          <div data-id="248" class="flex items-center gap-2 bg-white rounded-xl px-3 py-2 border border-system-teal-200">
+            <i data-id="249" data-lucide="mail" class="w-4 h-4 text-system-teal-550 flex-shrink-0"></i>
+            <span data-id="250" id="merge-single-email-display" class="text-sm text-foreground-800 flex-1 font-mono"></span>
           </div>
-          <div data-id="249" class="flex gap-2 flex-wrap">
-            <button data-id="250" id="merge-single-copy" class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-system-teal-400 text-white text-sm font-semibold hover:bg-system-teal-550 transition-colors cursor-pointer">
-              <i data-id="251" data-lucide="copy" class="w-4 h-4"></i> Copy Address
+          <div data-id="251" class="flex gap-2 flex-wrap">
+            <button data-id="252" id="merge-single-copy" class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-system-teal-400 text-white text-sm font-semibold hover:bg-system-teal-550 transition-colors cursor-pointer">
+              <i data-id="253" data-lucide="copy" class="w-4 h-4"></i> Copy Address
             </button>
-            <button data-id="252" id="merge-single-open" class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-background-200 text-foreground-700 text-sm font-semibold hover:bg-background-250 transition-colors cursor-pointer">
-              <i data-id="253" data-lucide="external-link" class="w-4 h-4"></i> Blank Email
+            <button data-id="254" id="merge-single-open" class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-background-200 text-foreground-700 text-sm font-semibold hover:bg-background-250 transition-colors cursor-pointer">
+              <i data-id="255" data-lucide="external-link" class="w-4 h-4"></i> Blank Email
             </button>
           </div>
-          <button data-id="254" id="merge-single-send-script" class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-navy-700 text-white text-sm font-semibold hover:bg-navy-800 transition-colors cursor-pointer mt-1">
-            <i data-id="255" data-lucide="send" class="w-4 h-4"></i> Compose with Script → Copy to Clipboard
+          <button data-id="256" id="merge-single-send-script" class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-navy-700 text-white text-sm font-semibold hover:bg-navy-800 transition-colors cursor-pointer mt-1">
+            <i data-id="257" data-lucide="send" class="w-4 h-4"></i> Compose with Script → Copy to Clipboard
           </button>
         </div>
       </div>
 
       <!-- ---- BULK PANEL ---- -->
-      <div data-id="256" id="merge-panel-bulk" class="hidden flex flex-col gap-4 p-6 overflow-y-auto">
-        <p data-id="257" class="text-xs text-foreground-450">Filter leads, select recipients, then copy the merged address list in your preferred format.</p>
+      <div data-id="258" id="merge-panel-bulk" class="hidden flex flex-col gap-4 p-6 overflow-y-auto">
+        <p data-id="259" class="text-xs text-foreground-450">Filter leads, select recipients, then copy the merged address list in your preferred format.</p>
 
         <!-- Bulk Filters -->
-        <div data-id="258" class="flex gap-2 flex-wrap">
-          <select data-id="259" id="merge-bulk-type" class="rounded-xl border border-background-250 bg-background-100 px-3 py-2 text-xs text-foreground-700 focus:outline-none focus:ring-2 focus:ring-system-teal-300 cursor-pointer">
-            <option data-id="260" value="">All Types</option>
+        <div data-id="260" class="flex gap-2 flex-wrap">
+          <select data-id="261" id="merge-bulk-type" class="rounded-xl border border-background-250 bg-background-100 px-3 py-2 text-xs text-foreground-700 focus:outline-none focus:ring-2 focus:ring-system-teal-300 cursor-pointer">
+            <option data-id="262" value="">All Types</option>
           </select>
-          <select data-id="261" id="merge-bulk-status" class="rounded-xl border border-background-250 bg-background-100 px-3 py-2 text-xs text-foreground-700 focus:outline-none focus:ring-2 focus:ring-system-teal-300 cursor-pointer">
-            <option data-id="262" value="">All Statuses</option>
-            <option data-id="263">New</option>
-            <option data-id="264">Contacted</option>
-            <option data-id="265">Follow-Up</option>
-            <option data-id="266">Proposal Sent</option>
-            <option data-id="267">Closed – Won</option>
-            <option data-id="268">Closed – Lost</option>
+          <select data-id="263" id="merge-bulk-status" class="rounded-xl border border-background-250 bg-background-100 px-3 py-2 text-xs text-foreground-700 focus:outline-none focus:ring-2 focus:ring-system-teal-300 cursor-pointer">
+            <option data-id="264" value="">All Statuses</option>
+            <option data-id="265">New</option>
+            <option data-id="266">Contacted</option>
+            <option data-id="267">Follow-Up</option>
+            <option data-id="268">Proposal Sent</option>
+            <option data-id="269">Closed – Won</option>
+            <option data-id="270">Closed – Lost</option>
           </select>
-          <input data-id="269" id="merge-bulk-search" type="text" placeholder="Search…" class="rounded-xl border border-background-250 bg-background-100 px-3 py-2 text-xs text-foreground-700 focus:outline-none focus:ring-2 focus:ring-system-teal-300 flex-1 min-w-[120px]" />
-          <button data-id="270" id="merge-bulk-select-all" class="px-3 py-2 rounded-xl bg-system-teal-100 text-system-teal-550 text-xs font-semibold hover:bg-system-teal-200 transition-colors border border-system-teal-300 cursor-pointer">Select All</button>
-          <button data-id="271" id="merge-bulk-clear" class="px-3 py-2 rounded-xl bg-background-200 text-foreground-500 text-xs font-semibold hover:bg-background-250 transition-colors cursor-pointer">Clear</button>
+          <input data-id="271" id="merge-bulk-search" type="text" placeholder="Search…" class="rounded-xl border border-background-250 bg-background-100 px-3 py-2 text-xs text-foreground-700 focus:outline-none focus:ring-2 focus:ring-system-teal-300 flex-1 min-w-[120px]" />
+          <button data-id="272" id="merge-bulk-select-all" class="px-3 py-2 rounded-xl bg-system-teal-100 text-system-teal-550 text-xs font-semibold hover:bg-system-teal-200 transition-colors border border-system-teal-300 cursor-pointer">Select All</button>
+          <button data-id="273" id="merge-bulk-clear" class="px-3 py-2 rounded-xl bg-background-200 text-foreground-500 text-xs font-semibold hover:bg-background-250 transition-colors cursor-pointer">Clear</button>
         </div>
 
         <!-- Lead Checklist -->
-        <div data-id="272" id="merge-bulk-list" class="flex flex-col gap-0.5 max-h-44 overflow-y-auto border border-background-200 rounded-xl bg-background-100 p-2"></div>
-        <div data-id="273" class="text-xs text-foreground-450" id="merge-bulk-count">0 selected</div>
+        <div data-id="274" id="merge-bulk-list" class="flex flex-col gap-0.5 max-h-44 overflow-y-auto border border-background-200 rounded-xl bg-background-100 p-2"></div>
+        <div data-id="275" class="text-xs text-foreground-450" id="merge-bulk-count">0 selected</div>
 
         <!-- Output Formats -->
-        <div data-id="274" class="flex flex-col gap-3">
+        <div data-id="276" class="flex flex-col gap-3">
           <!-- Comma-separated -->
-          <div data-id="275" class="bg-background-100 border border-background-200 rounded-2xl p-4">
-            <div data-id="276" class="flex items-center justify-between mb-2">
-              <span data-id="277" class="text-xs font-semibold text-foreground-700">Comma-Separated <span data-id="278" class="font-normal text-foreground-400">(Gmail / CC / BCC)</span></span>
-              <button data-id="279" class="merge-copy-btn px-3 py-1 rounded-lg bg-system-teal-100 text-system-teal-550 text-xs font-semibold hover:bg-system-teal-200 transition-colors border border-system-teal-300 cursor-pointer" data-format="comma">
-                <i data-id="280" data-lucide="copy" class="w-3 h-3 inline-block mr-1"></i>Copy
+          <div data-id="277" class="bg-background-100 border border-background-200 rounded-2xl p-4">
+            <div data-id="278" class="flex items-center justify-between mb-2">
+              <span data-id="279" class="text-xs font-semibold text-foreground-700">Comma-Separated <span data-id="280" class="font-normal text-foreground-400">(Gmail / CC / BCC)</span></span>
+              <button data-id="281" class="merge-copy-btn px-3 py-1 rounded-lg bg-system-teal-100 text-system-teal-550 text-xs font-semibold hover:bg-system-teal-200 transition-colors border border-system-teal-300 cursor-pointer" data-format="comma">
+                <i data-id="282" data-lucide="copy" class="w-3 h-3 inline-block mr-1"></i>Copy
               </button>
             </div>
-            <textarea data-id="281" id="merge-output-comma" class="w-full text-xs font-mono bg-white border border-background-200 rounded-xl px-3 py-2 resize-none focus:outline-none text-foreground-700 h-16" readonly placeholder="Select leads above…"></textarea>
+            <textarea data-id="283" id="merge-output-comma" class="w-full text-xs font-mono bg-white border border-background-200 rounded-xl px-3 py-2 resize-none focus:outline-none text-foreground-700 h-16" readonly placeholder="Select leads above…"></textarea>
           </div>
           <!-- Semicolon-separated -->
-          <div data-id="282" class="bg-background-100 border border-background-200 rounded-2xl p-4">
-            <div data-id="283" class="flex items-center justify-between mb-2">
-              <span data-id="284" class="text-xs font-semibold text-foreground-700">Semicolon-Separated <span data-id="285" class="font-normal text-foreground-400">(Outlook / To field)</span></span>
-              <button data-id="286" class="merge-copy-btn px-3 py-1 rounded-lg bg-system-teal-100 text-system-teal-550 text-xs font-semibold hover:bg-system-teal-200 transition-colors border border-system-teal-300 cursor-pointer" data-format="semi">
-                <i data-id="287" data-lucide="copy" class="w-3 h-3 inline-block mr-1"></i>Copy
+          <div data-id="284" class="bg-background-100 border border-background-200 rounded-2xl p-4">
+            <div data-id="285" class="flex items-center justify-between mb-2">
+              <span data-id="286" class="text-xs font-semibold text-foreground-700">Semicolon-Separated <span data-id="287" class="font-normal text-foreground-400">(Outlook / To field)</span></span>
+              <button data-id="288" class="merge-copy-btn px-3 py-1 rounded-lg bg-system-teal-100 text-system-teal-550 text-xs font-semibold hover:bg-system-teal-200 transition-colors border border-system-teal-300 cursor-pointer" data-format="semi">
+                <i data-id="289" data-lucide="copy" class="w-3 h-3 inline-block mr-1"></i>Copy
               </button>
             </div>
-            <textarea data-id="288" id="merge-output-semi" class="w-full text-xs font-mono bg-white border border-background-200 rounded-xl px-3 py-2 resize-none focus:outline-none text-foreground-700 h-16" readonly placeholder="Select leads above…"></textarea>
+            <textarea data-id="290" id="merge-output-semi" class="w-full text-xs font-mono bg-white border border-background-200 rounded-xl px-3 py-2 resize-none focus:outline-none text-foreground-700 h-16" readonly placeholder="Select leads above…"></textarea>
           </div>
           <!-- Mailto BCC -->
-          <div data-id="289" class="bg-background-100 border border-background-200 rounded-2xl p-4">
-            <div data-id="290" class="flex items-center justify-between mb-2">
-              <span data-id="291" class="text-xs font-semibold text-foreground-700">BCC Address List <span data-id="292" class="font-normal text-foreground-400">(paste into BCC field)</span></span>
-              <div data-id="293" class="flex gap-2">
-                <button data-id="294" class="merge-copy-btn px-3 py-1 rounded-lg bg-system-teal-100 text-system-teal-550 text-xs font-semibold hover:bg-system-teal-200 transition-colors border border-system-teal-300 cursor-pointer" data-format="mailto">
-                  <i data-id="295" data-lucide="copy" class="w-3 h-3 inline-block mr-1"></i>Copy
+          <div data-id="291" class="bg-background-100 border border-background-200 rounded-2xl p-4">
+            <div data-id="292" class="flex items-center justify-between mb-2">
+              <span data-id="293" class="text-xs font-semibold text-foreground-700">BCC Address List <span data-id="294" class="font-normal text-foreground-400">(paste into BCC field)</span></span>
+              <div data-id="295" class="flex gap-2">
+                <button data-id="296" class="merge-copy-btn px-3 py-1 rounded-lg bg-system-teal-100 text-system-teal-550 text-xs font-semibold hover:bg-system-teal-200 transition-colors border border-system-teal-300 cursor-pointer" data-format="mailto">
+                  <i data-id="297" data-lucide="copy" class="w-3 h-3 inline-block mr-1"></i>Copy
                 </button>
-                <button data-id="296" id="merge-bulk-open" class="px-3 py-1 rounded-lg bg-accent-550 text-white text-xs font-semibold hover:bg-accent-600 transition-colors cursor-pointer">
-                  <i data-id="297" data-lucide="send" class="w-3 h-3 inline-block mr-1"></i>Prepare Send
+                <button data-id="298" id="merge-bulk-open" class="px-3 py-1 rounded-lg bg-accent-550 text-white text-xs font-semibold hover:bg-accent-600 transition-colors cursor-pointer">
+                  <i data-id="299" data-lucide="send" class="w-3 h-3 inline-block mr-1"></i>Prepare Send
                 </button>
               </div>
             </div>
-            <textarea data-id="298" id="merge-output-mailto" class="w-full text-xs font-mono bg-white border border-background-200 rounded-xl px-3 py-2 resize-none focus:outline-none text-foreground-700 h-16" readonly placeholder="Select leads above…"></textarea>
+            <textarea data-id="300" id="merge-output-mailto" class="w-full text-xs font-mono bg-white border border-background-200 rounded-xl px-3 py-2 resize-none focus:outline-none text-foreground-700 h-16" readonly placeholder="Select leads above…"></textarea>
           </div>
         </div>
       </div>
 
       <!-- ---- EMAIL SCRIPT PANEL ---- -->
-      <div data-id="299" id="merge-panel-script" class="hidden flex flex-col gap-4 p-6 overflow-y-auto">
+      <div data-id="301" id="merge-panel-script" class="hidden flex flex-col gap-4 p-6 overflow-y-auto">
 
         <!-- Sender badge -->
-        <div data-id="300" class="flex items-center gap-3 bg-background-150 border border-background-250 rounded-2xl px-4 py-3">
-          <i data-id="301" data-lucide="mail" class="w-4 h-4 text-system-teal-550 flex-shrink-0"></i>
-          <div data-id="302" class="flex-1 min-w-0">
-            <div data-id="303" class="text-xs text-foreground-450 font-medium uppercase tracking-wide">Sending from (Apple Mail)</div>
-            <div data-id="304" class="text-sm font-semibold text-foreground-800 font-mono">andregoodlett@mac.com</div>
+        <div data-id="302" class="flex items-center gap-3 bg-background-150 border border-background-250 rounded-2xl px-4 py-3">
+          <i data-id="303" data-lucide="mail" class="w-4 h-4 text-system-teal-550 flex-shrink-0"></i>
+          <div data-id="304" class="flex-1 min-w-0">
+            <div data-id="305" class="text-xs text-foreground-450 font-medium uppercase tracking-wide">Sending from (Apple Mail)</div>
+            <div data-id="306" class="text-sm font-semibold text-foreground-800 font-mono">andregoodlett@mac.com</div>
           </div>
-          <span data-id="305" class="text-xs bg-system-green-200 text-system-green-550 font-semibold px-2 py-0.5 rounded-full flex items-center gap-1"><i data-id="306" data-lucide="check-circle" class="w-3 h-3"></i> Connected</span>
+          <span data-id="307" class="text-xs bg-system-green-200 text-system-green-550 font-semibold px-2 py-0.5 rounded-full flex items-center gap-1"><i data-id="308" data-lucide="check-circle" class="w-3 h-3"></i> Connected</span>
         </div>
 
         <!-- Subject -->
-        <div data-id="307">
-          <label data-id="308" class="text-xs font-semibold uppercase tracking-wide text-foreground-450 block mb-1">Subject Line</label>
-          <input data-id="309" id="script-subject" type="text" class="w-full rounded-xl border border-background-250 bg-background-100 px-4 py-2.5 text-sm text-foreground-800 focus:outline-none focus:ring-2 focus:ring-system-teal-300 font-medium" placeholder="Email subject…" />
+        <div data-id="309">
+          <label data-id="310" class="text-xs font-semibold uppercase tracking-wide text-foreground-450 block mb-1">Subject Line</label>
+          <input data-id="311" id="script-subject" type="text" class="w-full rounded-xl border border-background-250 bg-background-100 px-4 py-2.5 text-sm text-foreground-800 focus:outline-none focus:ring-2 focus:ring-system-teal-300 font-medium" placeholder="Email subject…" />
         </div>
 
         <!-- Body -->
-        <div data-id="310">
-          <div data-id="311" class="flex items-center justify-between mb-1">
-            <label data-id="312" class="text-xs font-semibold uppercase tracking-wide text-foreground-450">Body <span data-id="313" class="font-normal normal-case text-system-teal-550 ml-1">Use [Owner Name] as personalization tag</span></label>
-            <button data-id="314" id="script-reset" class="text-xs text-foreground-400 hover:text-foreground-700 underline cursor-pointer transition-colors">Reset to default</button>
+        <div data-id="312">
+          <div data-id="313" class="flex items-center justify-between mb-1">
+            <label data-id="314" class="text-xs font-semibold uppercase tracking-wide text-foreground-450">Body <span data-id="315" class="font-normal normal-case text-system-teal-550 ml-1">Use [Owner Name] as personalization tag</span></label>
+            <button data-id="316" id="script-reset" class="text-xs text-foreground-400 hover:text-foreground-700 underline cursor-pointer transition-colors">Reset to default</button>
           </div>
-          <textarea data-id="315" id="script-body" rows="10" class="w-full rounded-xl border border-background-250 bg-background-100 px-4 py-2.5 text-sm text-foreground-700 font-mono focus:outline-none focus:ring-2 focus:ring-system-teal-300 resize-y"></textarea>
+          <textarea data-id="317" id="script-body" rows="10" class="w-full rounded-xl border border-background-250 bg-background-100 px-4 py-2.5 text-sm text-foreground-700 font-mono focus:outline-none focus:ring-2 focus:ring-system-teal-300 resize-y"></textarea>
         </div>
 
         <!-- Actions -->
-        <div data-id="316" class="flex gap-2 flex-wrap">
-          <button data-id="317" id="script-save" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-system-teal-400 text-white text-sm font-semibold hover:bg-system-teal-550 transition-colors cursor-pointer">
-            <i data-id="318" data-lucide="save" class="w-4 h-4"></i> Save Script
+        <div data-id="318" class="flex gap-2 flex-wrap">
+          <button data-id="319" id="script-save" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-system-teal-400 text-white text-sm font-semibold hover:bg-system-teal-550 transition-colors cursor-pointer">
+            <i data-id="320" data-lucide="save" class="w-4 h-4"></i> Save Script
           </button>
-          <button data-id="319" id="script-preview-btn" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-accent-150 text-accent-550 border border-accent-250 text-sm font-semibold hover:bg-accent-200 transition-colors cursor-pointer">
-            <i data-id="320" data-lucide="eye" class="w-4 h-4"></i> Preview
+          <button data-id="321" id="script-preview-btn" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-accent-150 text-accent-550 border border-accent-250 text-sm font-semibold hover:bg-accent-200 transition-colors cursor-pointer">
+            <i data-id="322" data-lucide="eye" class="w-4 h-4"></i> Preview
           </button>
-          <div data-id="321" class="flex-1"></div>
-          <button data-id="322" id="script-send-selected" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-navy-700 text-white text-sm font-semibold hover:bg-navy-800 transition-colors cursor-pointer" title="Prepare email for all leads selected in Bulk tab">
-            <i data-id="323" data-lucide="send" class="w-4 h-4"></i> Prepare Bulk Send
+          <div data-id="323" class="flex-1"></div>
+          <button data-id="324" id="script-send-selected" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-navy-700 text-white text-sm font-semibold hover:bg-navy-800 transition-colors cursor-pointer" title="Prepare email for all leads selected in Bulk tab">
+            <i data-id="325" data-lucide="send" class="w-4 h-4"></i> Prepare Bulk Send
           </button>
         </div>
 
         <!-- Preview box -->
-        <div data-id="324" id="script-preview-box" class="hidden bg-white border-2 border-accent-200 rounded-2xl overflow-hidden">
-          <div data-id="325" class="bg-accent-100 px-4 py-2 border-b border-accent-200 flex items-center justify-between">
-            <span data-id="326" class="text-xs font-semibold text-accent-550 uppercase tracking-wide">Live Preview</span>
-            <button data-id="327" id="script-preview-close" class="text-xs text-foreground-400 hover:text-foreground-600 cursor-pointer">✕ Close</button>
+        <div data-id="326" id="script-preview-box" class="hidden bg-white border-2 border-accent-200 rounded-2xl overflow-hidden">
+          <div data-id="327" class="bg-accent-100 px-4 py-2 border-b border-accent-200 flex items-center justify-between">
+            <span data-id="328" class="text-xs font-semibold text-accent-550 uppercase tracking-wide">Live Preview</span>
+            <button data-id="329" id="script-preview-close" class="text-xs text-foreground-400 hover:text-foreground-600 cursor-pointer">✕ Close</button>
           </div>
-          <div data-id="328" class="px-5 py-4 space-y-2">
-            <div data-id="329" class="flex gap-2 text-xs text-foreground-500 border-b border-background-200 pb-2">
-              <span data-id="330" class="font-semibold w-14">From:</span><span data-id="331" class="font-mono text-foreground-700">andregoodlett@mac.com</span>
+          <div data-id="330" class="px-5 py-4 space-y-2">
+            <div data-id="331" class="flex gap-2 text-xs text-foreground-500 border-b border-background-200 pb-2">
+              <span data-id="332" class="font-semibold w-14">From:</span><span data-id="333" class="font-mono text-foreground-700">andregoodlett@mac.com</span>
             </div>
-            <div data-id="332" class="flex gap-2 text-xs text-foreground-500 border-b border-background-200 pb-2">
-              <span data-id="333" class="font-semibold w-14">To:</span><span data-id="334" id="preview-to" class="font-mono text-foreground-700">recipient@example.com</span>
+            <div data-id="334" class="flex gap-2 text-xs text-foreground-500 border-b border-background-200 pb-2">
+              <span data-id="335" class="font-semibold w-14">To:</span><span data-id="336" id="preview-to" class="font-mono text-foreground-700">recipient@example.com</span>
             </div>
-            <div data-id="335" class="flex gap-2 text-xs text-foreground-500 border-b border-background-200 pb-2">
-              <span data-id="336" class="font-semibold w-14">Subject:</span><span data-id="337" id="preview-subject" class="text-foreground-800 font-medium"></span>
+            <div data-id="337" class="flex gap-2 text-xs text-foreground-500 border-b border-background-200 pb-2">
+              <span data-id="338" class="font-semibold w-14">Subject:</span><span data-id="339" id="preview-subject" class="text-foreground-800 font-medium"></span>
             </div>
-            <pre data-id="338" id="preview-body" class="text-xs text-foreground-700 whitespace-pre-wrap font-sans leading-relaxed pt-2"></pre>
+            <pre data-id="340" id="preview-body" class="text-xs text-foreground-700 whitespace-pre-wrap font-sans leading-relaxed pt-2"></pre>
           </div>
         </div>
 
@@ -562,89 +565,194 @@
   </div>
 
   <!-- ===== READY TO SEND MODAL ===== -->
-  <div data-id="339" id="rts-modal" class="modal-overlay">
-    <div data-id="340" class="modal-content" style="max-width:560px;">
-      <div data-id="341" class="bg-navy-700 text-white px-6 py-4 rounded-t-[1.25rem] flex items-center justify-between">
-        <div data-id="342" class="flex items-center gap-2">
-          <i data-id="343" data-lucide="send" class="w-5 h-5"></i>
-          <h2 data-id="344" class="text-lg font-semibold">Ready to Send</h2>
+  <div data-id="341" id="rts-modal" class="modal-overlay">
+    <div data-id="342" class="modal-content" style="max-width:560px;">
+      <div data-id="343" class="bg-navy-700 text-white px-6 py-4 rounded-t-[1.25rem] flex items-center justify-between">
+        <div data-id="344" class="flex items-center gap-2">
+          <i data-id="345" data-lucide="send" class="w-5 h-5"></i>
+          <h2 data-id="346" class="text-lg font-semibold">Ready to Send</h2>
         </div>
-        <button data-id="345" id="rts-close" class="p-1 hover:bg-navy-800 rounded-lg cursor-pointer"><i data-id="346" data-lucide="x" class="w-5 h-5"></i></button>
+        <button data-id="347" id="rts-close" class="p-1 hover:bg-navy-800 rounded-lg cursor-pointer"><i data-id="348" data-lucide="x" class="w-5 h-5"></i></button>
       </div>
-      <div data-id="347" class="p-6 space-y-4">
+      <div data-id="349" class="p-6 space-y-4">
         <!-- instruction banner -->
-        <div data-id="348" class="bg-system-yellow-100 border border-system-yellow-300 rounded-2xl px-4 py-3 flex gap-3 items-start">
-          <i data-id="349" data-lucide="info" class="w-4 h-4 text-system-yellow-600 flex-shrink-0 mt-0.5"></i>
-          <p data-id="350" class="text-xs text-system-yellow-600 leading-relaxed">Copy each field below and paste into Apple Mail. Open a <strong data-id="351">New Message</strong> in Apple Mail, then paste Subject and Body — the To address is pre-copied when you click a name.</p>
+        <div data-id="350" class="bg-system-yellow-100 border border-system-yellow-300 rounded-2xl px-4 py-3 flex gap-3 items-start">
+          <i data-id="351" data-lucide="info" class="w-4 h-4 text-system-yellow-600 flex-shrink-0 mt-0.5"></i>
+          <p data-id="352" class="text-xs text-system-yellow-600 leading-relaxed">Copy each field below and paste into Apple Mail. Open a <strong data-id="353">New Message</strong> in Apple Mail, then paste Subject and Body — the To address is pre-copied when you click a name.</p>
         </div>
 
         <!-- From -->
-        <div data-id="352">
-          <div data-id="353" class="text-xs font-semibold uppercase tracking-wide text-foreground-450 mb-1">From</div>
-          <div data-id="354" class="flex items-center gap-2 bg-background-100 border border-background-250 rounded-xl px-4 py-2.5">
-            <span data-id="355" class="text-sm font-mono text-foreground-700 flex-1">andregoodlett@mac.com</span>
+        <div data-id="354">
+          <div data-id="355" class="text-xs font-semibold uppercase tracking-wide text-foreground-450 mb-1">From</div>
+          <div data-id="356" class="flex items-center gap-2 bg-background-100 border border-background-250 rounded-xl px-4 py-2.5">
+            <span data-id="357" class="text-sm font-mono text-foreground-700 flex-1">andregoodlett@mac.com</span>
           </div>
         </div>
 
         <!-- To -->
-        <div data-id="356">
-          <div data-id="357" class="text-xs font-semibold uppercase tracking-wide text-foreground-450 mb-1">To</div>
-          <div data-id="358" class="flex items-center gap-2">
-            <div data-id="359" class="flex-1 bg-background-100 border border-background-250 rounded-xl px-4 py-2.5">
-              <div data-id="360" id="rts-to-single" class="text-sm font-mono text-foreground-700"></div>
-              <div data-id="361" id="rts-to-bulk-count" class="text-xs text-foreground-450 mt-0.5"></div>
+        <div data-id="358">
+          <div data-id="359" class="text-xs font-semibold uppercase tracking-wide text-foreground-450 mb-1">To</div>
+          <div data-id="360" class="flex items-center gap-2">
+            <div data-id="361" class="flex-1 bg-background-100 border border-background-250 rounded-xl px-4 py-2.5">
+              <div data-id="362" id="rts-to-single" class="text-sm font-mono text-foreground-700"></div>
+              <div data-id="363" id="rts-to-bulk-count" class="text-xs text-foreground-450 mt-0.5"></div>
             </div>
-            <button data-id="362" id="rts-copy-to" class="rts-copy-btn flex-shrink-0 inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-system-teal-100 text-system-teal-550 text-xs font-semibold hover:bg-system-teal-200 transition-colors border border-system-teal-300 cursor-pointer" data-field="to">
-              <i data-id="363" data-lucide="copy" class="w-3.5 h-3.5"></i> Copy To
+            <button data-id="364" id="rts-copy-to" class="rts-copy-btn flex-shrink-0 inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-system-teal-100 text-system-teal-550 text-xs font-semibold hover:bg-system-teal-200 transition-colors border border-system-teal-300 cursor-pointer" data-field="to">
+              <i data-id="365" data-lucide="copy" class="w-3.5 h-3.5"></i> Copy To
             </button>
           </div>
         </div>
 
         <!-- Subject -->
-        <div data-id="364">
-          <div data-id="365" class="text-xs font-semibold uppercase tracking-wide text-foreground-450 mb-1">Subject</div>
-          <div data-id="366" class="flex items-center gap-2">
-            <div data-id="367" class="flex-1 bg-background-100 border border-background-250 rounded-xl px-4 py-2.5">
-              <div data-id="368" id="rts-subject" class="text-sm font-medium text-foreground-800"></div>
+        <div data-id="366">
+          <div data-id="367" class="text-xs font-semibold uppercase tracking-wide text-foreground-450 mb-1">Subject</div>
+          <div data-id="368" class="flex items-center gap-2">
+            <div data-id="369" class="flex-1 bg-background-100 border border-background-250 rounded-xl px-4 py-2.5">
+              <div data-id="370" id="rts-subject" class="text-sm font-medium text-foreground-800"></div>
             </div>
-            <button data-id="369" id="rts-copy-subject" class="rts-copy-btn flex-shrink-0 inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-system-teal-100 text-system-teal-550 text-xs font-semibold hover:bg-system-teal-200 transition-colors border border-system-teal-300 cursor-pointer" data-field="subject">
-              <i data-id="370" data-lucide="copy" class="w-3.5 h-3.5"></i> Copy
+            <button data-id="371" id="rts-copy-subject" class="rts-copy-btn flex-shrink-0 inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-system-teal-100 text-system-teal-550 text-xs font-semibold hover:bg-system-teal-200 transition-colors border border-system-teal-300 cursor-pointer" data-field="subject">
+              <i data-id="372" data-lucide="copy" class="w-3.5 h-3.5"></i> Copy
             </button>
           </div>
         </div>
 
         <!-- Body -->
-        <div data-id="371">
-          <div data-id="372" class="flex items-center justify-between mb-1">
-            <div data-id="373" class="text-xs font-semibold uppercase tracking-wide text-foreground-450">Body</div>
-            <button data-id="374" id="rts-copy-body" class="rts-copy-btn inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-system-teal-100 text-system-teal-550 text-xs font-semibold hover:bg-system-teal-200 transition-colors border border-system-teal-300 cursor-pointer" data-field="body">
-              <i data-id="375" data-lucide="copy" class="w-3.5 h-3.5"></i> Copy Body
+        <div data-id="373">
+          <div data-id="374" class="flex items-center justify-between mb-1">
+            <div data-id="375" class="text-xs font-semibold uppercase tracking-wide text-foreground-450">Body</div>
+            <button data-id="376" id="rts-copy-body" class="rts-copy-btn inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-system-teal-100 text-system-teal-550 text-xs font-semibold hover:bg-system-teal-200 transition-colors border border-system-teal-300 cursor-pointer" data-field="body">
+              <i data-id="377" data-lucide="copy" class="w-3.5 h-3.5"></i> Copy Body
             </button>
           </div>
-          <pre data-id="376" id="rts-body" class="w-full bg-background-100 border border-background-250 rounded-xl px-4 py-3 text-xs text-foreground-700 whitespace-pre-wrap font-sans leading-relaxed max-h-52 overflow-y-auto"></pre>
+          <pre data-id="378" id="rts-body" class="w-full bg-background-100 border border-background-250 rounded-xl px-4 py-3 text-xs text-foreground-700 whitespace-pre-wrap font-sans leading-relaxed max-h-52 overflow-y-auto"></pre>
         </div>
 
         <!-- Copy All button -->
-        <button data-id="377" id="rts-copy-all" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-navy-700 text-white text-sm font-bold hover:bg-navy-800 transition-colors cursor-pointer">
-          <i data-id="378" data-lucide="clipboard-copy" class="w-4 h-4"></i> Copy Everything to Clipboard
+        <button data-id="379" id="rts-copy-all" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-navy-700 text-white text-sm font-bold hover:bg-navy-800 transition-colors cursor-pointer">
+          <i data-id="380" data-lucide="clipboard-copy" class="w-4 h-4"></i> Copy Everything to Clipboard
         </button>
 
         <!-- Step guide -->
-        <div data-id="379" class="bg-accent-100 border border-accent-200 rounded-2xl px-4 py-3">
-          <div data-id="380" class="text-xs font-bold text-accent-550 mb-2 uppercase tracking-wide">Quick Steps</div>
-          <ol data-id="381" class="text-xs text-foreground-600 space-y-1 list-decimal list-inside leading-relaxed">
-            <li data-id="382">Click <strong data-id="383">Copy To</strong> above → paste into Apple Mail <strong data-id="384">To:</strong> field</li>
-            <li data-id="385">Click <strong data-id="386">Copy Subject</strong> → paste into Apple Mail <strong data-id="387">Subject:</strong> field</li>
-            <li data-id="388">Click <strong data-id="389">Copy Body</strong> → paste into Apple Mail <strong data-id="390">body</strong></li>
-            <li data-id="391">Review, then hit <strong data-id="392">Send</strong> in Apple Mail</li>
+        <div data-id="381" class="bg-accent-100 border border-accent-200 rounded-2xl px-4 py-3">
+          <div data-id="382" class="text-xs font-bold text-accent-550 mb-2 uppercase tracking-wide">Quick Steps</div>
+          <ol data-id="383" class="text-xs text-foreground-600 space-y-1 list-decimal list-inside leading-relaxed">
+            <li data-id="384">Click <strong data-id="385">Copy To</strong> above → paste into Apple Mail <strong data-id="386">To:</strong> field</li>
+            <li data-id="387">Click <strong data-id="388">Copy Subject</strong> → paste into Apple Mail <strong data-id="389">Subject:</strong> field</li>
+            <li data-id="390">Click <strong data-id="391">Copy Body</strong> → paste into Apple Mail <strong data-id="392">body</strong></li>
+            <li data-id="393">Review, then hit <strong data-id="394">Send</strong> in Apple Mail</li>
           </ol>
         </div>
       </div>
     </div>
   </div>
 
-  <footer data-id="393" class="py-6 mt-auto text-center no-print">
-    <p data-id="394" class="text-xs text-foreground-450">Made by Copilot</p>
+  <!-- ===== ZEROBOUNCE VERIFICATION MODAL ===== -->
+  <div data-id="395" id="zb-modal" class="modal-overlay">
+    <div data-id="396" class="modal-content" style="max-width:620px;">
+      <!-- Header -->
+      <div data-id="397" class="flex items-center justify-between px-6 py-4 border-b border-background-200">
+        <div data-id="398" class="flex items-center gap-2">
+          <i data-id="399" data-lucide="shield-check" class="w-5 h-5 text-accent-550"></i>
+          <h2 data-id="400" class="text-lg font-bold text-foreground-800">ZeroBounce Email Verification</h2>
+        </div>
+        <button data-id="401" id="zb-modal-close" class="w-8 h-8 rounded-full bg-background-200 hover:bg-background-250 flex items-center justify-center text-foreground-500 transition-colors cursor-pointer">
+          <i data-id="402" data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <div data-id="403" class="p-6 space-y-5 overflow-y-auto max-h-[80vh]">
+
+        <!-- API Key Section -->
+        <div data-id="404" class="bg-background-100 border border-background-250 rounded-2xl p-4 space-y-3">
+          <div data-id="405" class="flex items-center gap-2">
+            <i data-id="406" data-lucide="key" class="w-4 h-4 text-foreground-450"></i>
+            <span data-id="407" class="text-sm font-semibold text-foreground-700">ZeroBounce API Key</span>
+            <span data-id="408" class="text-xs bg-system-red-200 text-system-red-550 px-2 py-0.5 rounded-full font-medium ml-auto" id="zb-key-status-badge">Not Set</span>
+          </div>
+          <div data-id="409" class="flex gap-2">
+            <input data-id="410" id="zb-api-key-input" type="password" placeholder="Paste your ZeroBounce API key here…" class="flex-1 rounded-xl border border-background-250 bg-white px-4 py-2.5 text-sm font-mono text-foreground-800 focus:outline-none focus:ring-2 focus:ring-accent-300" autocomplete="off" />
+            <button data-id="411" id="zb-save-key" class="px-4 py-2 rounded-xl bg-accent-550 text-white text-sm font-semibold hover:bg-accent-600 transition-colors cursor-pointer">Save</button>
+            <button data-id="412" id="zb-clear-key" class="px-3 py-2 rounded-xl bg-background-200 text-foreground-500 text-sm font-semibold hover:bg-background-250 transition-colors cursor-pointer">Clear</button>
+          </div>
+          <p data-id="413" class="text-xs text-foreground-400 leading-relaxed">Your key is stored only in this browser's local storage — it never leaves your device. Get your free key at <strong data-id="414">zerobounce.net</strong> (100 free verifications/month). <span data-id="415" class="text-system-red-400 font-semibold">Do not paste your key into the Copilot chat.</span></p>
+          <div data-id="416" id="zb-credits-row" class="hidden flex items-center gap-2 text-xs text-system-green-550 font-semibold">
+            <i data-id="417" data-lucide="coins" class="w-3.5 h-3.5"></i>
+            <span data-id="418" id="zb-credits-text">Checking credits…</span>
+          </div>
+        </div>
+
+        <!-- Verification Mode -->
+        <div data-id="419" class="flex gap-3 flex-wrap">
+          <button data-id="420" id="zb-verify-single-mode" class="flex-1 min-w-[140px] flex flex-col items-center gap-1.5 px-4 py-3 rounded-2xl border-2 border-accent-550 bg-accent-150 text-accent-550 cursor-pointer transition-colors">
+            <i data-id="421" data-lucide="user-check" class="w-5 h-5"></i>
+            <span data-id="422" class="text-sm font-semibold">Single Lead</span>
+            <span data-id="423" class="text-xs text-foreground-450">Verify one address</span>
+          </button>
+          <button data-id="424" id="zb-verify-all-mode" class="flex-1 min-w-[140px] flex flex-col items-center gap-1.5 px-4 py-3 rounded-2xl border-2 border-background-250 bg-background-100 text-foreground-600 hover:border-accent-300 hover:bg-accent-100 cursor-pointer transition-colors">
+            <i data-id="425" data-lucide="users-round" class="w-5 h-5"></i>
+            <span data-id="426" class="text-sm font-semibold">All Leads</span>
+            <span data-id="427" class="text-xs text-foreground-450">Verify entire list</span>
+          </button>
+          <button data-id="428" id="zb-verify-unverified-mode" class="flex-1 min-w-[140px] flex flex-col items-center gap-1.5 px-4 py-3 rounded-2xl border-2 border-background-250 bg-background-100 text-foreground-600 hover:border-accent-300 hover:bg-accent-100 cursor-pointer transition-colors">
+            <i data-id="429" data-lucide="list-checks" class="w-5 h-5"></i>
+            <span data-id="430" class="text-sm font-semibold">Unverified Only</span>
+            <span data-id="431" class="text-xs text-foreground-450">Skip already verified</span>
+          </button>
+        </div>
+
+        <!-- Single Lead Picker -->
+        <div data-id="432" id="zb-single-picker" class="space-y-2">
+          <input data-id="433" id="zb-single-search" type="text" placeholder="Search lead by name or email…" class="w-full rounded-xl border border-background-250 bg-background-100 px-4 py-2.5 text-sm text-foreground-800 focus:outline-none focus:ring-2 focus:ring-accent-300" />
+          <div data-id="434" id="zb-single-list" class="max-h-40 overflow-y-auto flex flex-col gap-0.5"></div>
+          <div data-id="435" id="zb-single-selected" class="hidden items-center gap-3 bg-accent-100 border border-accent-200 rounded-xl px-4 py-2.5">
+            <i data-id="436" data-lucide="user" class="w-4 h-4 text-accent-550 flex-shrink-0"></i>
+            <div data-id="437" class="flex-1 min-w-0">
+              <div data-id="438" id="zb-sel-name" class="text-sm font-semibold text-foreground-800 truncate"></div>
+              <div data-id="439" id="zb-sel-email" class="text-xs font-mono text-foreground-500 truncate"></div>
+            </div>
+            <button data-id="440" id="zb-deselect" class="text-xs text-foreground-400 hover:text-foreground-700 cursor-pointer">✕</button>
+          </div>
+        </div>
+
+        <!-- Run button -->
+        <button data-id="441" id="zb-run-btn" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-accent-550 text-white text-sm font-bold hover:bg-accent-600 transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed">
+          <i data-id="442" data-lucide="zap" class="w-4 h-4"></i> Run Verification
+        </button>
+
+        <!-- Progress bar (hidden until running) -->
+        <div data-id="443" id="zb-progress-wrap" class="hidden space-y-2">
+          <div data-id="444" class="flex justify-between text-xs text-foreground-450">
+            <span data-id="445" id="zb-progress-label">Verifying…</span>
+            <span data-id="446" id="zb-progress-pct">0%</span>
+          </div>
+          <div data-id="447" class="w-full bg-background-200 rounded-full h-2">
+            <div data-id="448" id="zb-progress-bar" class="bg-accent-550 h-2 rounded-full transition-all" style="width:0%"></div>
+          </div>
+        </div>
+
+        <!-- Results Table -->
+        <div data-id="449" id="zb-results-wrap" class="hidden space-y-3">
+          <div data-id="450" class="flex items-center justify-between flex-wrap gap-2">
+            <span data-id="451" class="text-sm font-semibold text-foreground-700">Results</span>
+            <div data-id="452" class="flex gap-2 text-xs flex-wrap">
+              <span data-id="453" id="zb-stat-valid" class="bg-system-green-200 text-system-green-550 px-2 py-0.5 rounded-full font-semibold">0 Valid</span>
+              <span data-id="454" id="zb-stat-invalid" class="bg-system-red-200 text-system-red-550 px-2 py-0.5 rounded-full font-semibold">0 Invalid</span>
+              <span data-id="455" id="zb-stat-catchall" class="bg-system-yellow-100 text-system-yellow-600 px-2 py-0.5 rounded-full font-semibold border border-system-yellow-300">0 Catch-all</span>
+              <span data-id="456" id="zb-stat-unknown" class="bg-background-200 text-foreground-550 px-2 py-0.5 rounded-full font-semibold">0 Unknown</span>
+            </div>
+          </div>
+          <div data-id="457" id="zb-results-list" class="flex flex-col gap-1 max-h-52 overflow-y-auto border border-background-200 rounded-xl bg-background-100 p-2"></div>
+          <button data-id="458" id="zb-save-results" class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-2xl bg-system-green-400 text-white text-sm font-bold hover:bg-system-green-550 transition-colors cursor-pointer">
+            <i data-id="459" data-lucide="save" class="w-4 h-4"></i> Save Results to Lead Records
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer data-id="460" class="py-6 mt-auto text-center no-print">
+    <p data-id="461" class="text-xs text-foreground-450">Made by Copilot</p>
   </footer>
 
   <script>
@@ -714,7 +822,7 @@
     const PRIORITIES = ["High","Medium","Low"];
     const STORAGE_KEY = "prospecting_leads_v1";
     const PAGE_SIZE = 15;
-    const TODAY = "2026-06-23";
+    const TODAY = "2026-06-24";
 
     let leads = [];
     let filteredLeads = [];
@@ -832,6 +940,24 @@
       return result;
     }
 
+    // =================== ZEROBOUNCE VERIFICATION BADGE HELPER ===================
+    function zbGetStatusBadgeForLead(leadId) {
+      const saved = zbLoadResults();
+      if (!saved[leadId]) return "";
+      const s = saved[leadId].status;
+      const map = {
+        valid:      { cls:"bg-system-green-200 text-system-green-550", icon:"✓", label:"Valid" },
+        invalid:    { cls:"bg-system-red-200 text-system-red-550",     icon:"✕", label:"Invalid" },
+        "catch-all":{ cls:"bg-system-yellow-100 text-system-yellow-600 border border-system-yellow-300", icon:"~", label:"Catch-all" },
+        spamtrap:   { cls:"bg-system-red-200 text-system-red-550",     icon:"⚠", label:"Spam Trap" },
+        abuse:      { cls:"bg-system-orange-100 text-system-orange-550",icon:"⚠", label:"Abuse" },
+        unknown:    { cls:"bg-background-200 text-foreground-550",      icon:"?", label:"Unknown" },
+        error:      { cls:"bg-system-red-200 text-system-red-400",      icon:"!", label:"Error" },
+      };
+      const m = map[s] || map.unknown;
+      return `<span class="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-full text-[10px] font-bold ${m.cls} ml-1">${m.icon} ${m.label}</span>`;
+    }
+
     // =================== RENDER ===================
     function renderAll() {
       filteredLeads = getFilteredLeads();
@@ -895,6 +1021,7 @@
         const bgClass = i % 2 === 0 ? "bg-white" : "bg-background-100";
         const notesPreview = l.notes ? (l.notes.length > 30 ? l.notes.substring(0, 30) + "…" : l.notes) : "—";
         const isTodayFU = l.followUpDate === TODAY;
+        const verifyBadge = zbGetStatusBadgeForLead(l.id);
 
         return `<tr class="${bgClass} ${rowClass} hover:bg-accent-100 transition-colors" data-id="${l.id}">
           <td class="px-3 py-2.5 text-xs text-foreground-450 tabular-nums">${rowNum}</td>
@@ -904,7 +1031,7 @@
           <td class="px-3 py-2.5 text-xs text-foreground-600 whitespace-nowrap">${escHtml(l.type)}</td>
           <td class="px-3 py-2.5 text-sm text-foreground-700 whitespace-nowrap">${escHtml(l.owner)}</td>
           <td class="px-3 py-2.5 text-sm whitespace-nowrap"><a href="tel:${l.phone}" class="text-accent-550 hover:underline">${escHtml(l.phone)}</a></td>
-          <td class="px-3 py-2.5 text-xs whitespace-nowrap"><a href="mailto:${l.email}" class="text-accent-550 hover:underline">${escHtml(l.email)}</a></td>
+          <td class="px-3 py-2.5 text-xs whitespace-nowrap"><a href="mailto:${l.email}" class="text-accent-550 hover:underline">${escHtml(l.email)}</a>${verifyBadge}</td>
           <td class="px-3 py-2.5 text-center"><a href="${escHtml(l.gpsLink)}" target="_blank" rel="noopener" class="text-accent-450 hover:text-accent-600" title="Open in Maps">🗺️</a></td>
           <td class="px-3 py-2.5">
             <select class="inline-select text-xs font-medium rounded-lg px-2 py-1 cursor-pointer border-0 focus:ring-2 focus:ring-accent-300 ${statusBadgeClass(l.status)} inline-status" data-id="${l.id}">
@@ -1193,9 +1320,6 @@
       });
     }
 
-    // =================== MAILTO HELPER ===================
-    // (removed — mailto: is blocked in the sandboxed iframe)
-
     // =================== EMAIL SCRIPT ENGINE ===================
     const SCRIPT_STORAGE_KEY = "email_script_v1";
     const DEFAULT_SCRIPT_SUBJECT = "Zero-cost strategy to boost retention?";
@@ -1252,6 +1376,269 @@ Licensed Insurance Agent
 
     function buildBlankMailto(toEmail) {
       return "mailto:" + toEmail;
+    }
+
+    // =================== ZEROBOUNCE VERIFICATION ===================
+    const ZB_KEY_STORAGE = "zb_api_key_v1";
+    const ZB_RESULTS_STORAGE = "zb_results_v1";
+    let zbMode = "single";
+    let zbSelectedLeadId = null;
+    let zbPendingResults = [];
+
+    function zbGetKey() {
+      return localStorage.getItem(ZB_KEY_STORAGE) || "";
+    }
+
+    function zbLoadResults() {
+      try { return JSON.parse(localStorage.getItem(ZB_RESULTS_STORAGE) || "{}"); } catch(e) { return {}; }
+    }
+
+    function zbSaveResults(results) {
+      localStorage.setItem(ZB_RESULTS_STORAGE, JSON.stringify(results));
+    }
+
+    function zbStatusBadge(status) {
+      const map = {
+        valid:    { bg:"bg-system-green-200",  text:"text-system-green-550",  icon:"check-circle",    label:"Valid" },
+        invalid:  { bg:"bg-system-red-200",    text:"text-system-red-550",    icon:"x-circle",        label:"Invalid" },
+        "catch-all":{ bg:"bg-system-yellow-100",text:"text-system-yellow-600",icon:"alert-triangle",  label:"Catch-all" },
+        spamtrap: { bg:"bg-system-red-200",    text:"text-system-red-550",    icon:"alert-octagon",   label:"Spam Trap" },
+        abuse:    { bg:"bg-system-orange-100", text:"text-system-orange-550", icon:"shield-alert",    label:"Abuse" },
+        unknown:  { bg:"bg-background-200",    text:"text-foreground-550",    icon:"help-circle",     label:"Unknown" },
+        error:    { bg:"bg-system-red-200",    text:"text-system-red-550",    icon:"wifi-off",        label:"Error" },
+      };
+      const s = map[status] || map.unknown;
+      return `<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold ${s.bg} ${s.text}"><i data-lucide="${s.icon}" class="w-3 h-3"></i>${s.label}</span>`;
+    }
+
+    function zbUpdateKeyBadge() {
+      const key = zbGetKey();
+      const badge = document.getElementById("zb-key-status-badge");
+      if (badge) {
+        if (key) {
+          badge.textContent = "Key Saved ✓";
+          badge.className = "text-xs bg-system-green-200 text-system-green-550 px-2 py-0.5 rounded-full font-medium ml-auto";
+        } else {
+          badge.textContent = "Not Set";
+          badge.className = "text-xs bg-system-red-200 text-system-red-550 px-2 py-0.5 rounded-full font-medium ml-auto";
+        }
+      }
+    }
+
+    function zbSetMode(mode) {
+      zbMode = mode;
+      const single = document.getElementById("zb-verify-single-mode");
+      const all = document.getElementById("zb-verify-all-mode");
+      const unverified = document.getElementById("zb-verify-unverified-mode");
+      const picker = document.getElementById("zb-single-picker");
+      const activeClass = "border-accent-550 bg-accent-150 text-accent-550";
+      const inactiveClass = "border-background-250 bg-background-100 text-foreground-600 hover:border-accent-300 hover:bg-accent-100";
+      single.className = `flex-1 min-w-[140px] flex flex-col items-center gap-1.5 px-4 py-3 rounded-2xl border-2 cursor-pointer transition-colors ${mode==="single"?activeClass:inactiveClass}`;
+      all.className = `flex-1 min-w-[140px] flex flex-col items-center gap-1.5 px-4 py-3 rounded-2xl border-2 cursor-pointer transition-colors ${mode==="all"?activeClass:inactiveClass}`;
+      unverified.className = `flex-1 min-w-[140px] flex flex-col items-center gap-1.5 px-4 py-3 rounded-2xl border-2 cursor-pointer transition-colors ${mode==="unverified"?activeClass:inactiveClass}`;
+      picker.classList.toggle("hidden", mode !== "single");
+    }
+
+    function zbRenderSingleList() {
+      const q = (document.getElementById("zb-single-search").value || "").toLowerCase().trim();
+      const list = document.getElementById("zb-single-list");
+      if (!q) { list.innerHTML = ""; return; }
+      const filtered = leads.filter(l => l.email && ([l.name, l.email].join(" ").toLowerCase().includes(q))).slice(0, 12);
+      if (filtered.length === 0) { list.innerHTML = '<div class="text-xs text-foreground-400 px-3 py-2">No matches.</div>'; return; }
+      const saved = zbLoadResults();
+      list.innerHTML = filtered.map(l => {
+        const status = saved[l.id] ? saved[l.id].status : null;
+        const badge = status ? zbStatusBadge(status) : "";
+        return `<button class="zb-pick-lead text-left w-full px-3 py-2 rounded-xl hover:bg-accent-100 transition-colors flex items-center gap-2 cursor-pointer" data-id="${l.id}">
+          <span class="flex-1 min-w-0">
+            <span class="text-sm font-medium text-foreground-800 block truncate">${escHtml(l.name)}</span>
+            <span class="text-xs font-mono text-foreground-450 truncate">${escHtml(l.email)}</span>
+          </span>
+          ${badge}
+        </button>`;
+      }).join("");
+      list.querySelectorAll(".zb-pick-lead").forEach(btn => {
+        btn.addEventListener("click", () => {
+          zbSelectedLeadId = parseInt(btn.dataset.id);
+          const lead = leads.find(l => l.id === zbSelectedLeadId);
+          document.getElementById("zb-sel-name").textContent = lead.name;
+          document.getElementById("zb-sel-email").textContent = lead.email;
+          document.getElementById("zb-single-selected").classList.remove("hidden");
+          document.getElementById("zb-single-selected").style.display = "flex";
+          list.innerHTML = "";
+          document.getElementById("zb-single-search").value = "";
+          if (typeof lucide !== "undefined") lucide.createIcons();
+        });
+      });
+      if (typeof lucide !== "undefined") lucide.createIcons();
+    }
+
+    async function zbVerifyOne(email, apiKey) {
+      try {
+        const url = `https://api.zerobounce.net/v2/validate?api_key=${encodeURIComponent(apiKey)}&email=${encodeURIComponent(email)}&ip_address=`;
+        const resp = await fetch(url);
+        if (!resp.ok) return { status: "error", sub_status: "http_" + resp.status };
+        const data = await resp.json();
+        return { status: data.status, sub_status: data.sub_status || "", free_email: data.free_email, mx_found: data.mx_found };
+      } catch(e) {
+        return { status: "error", sub_status: "network_error" };
+      }
+    }
+
+    async function zbCheckCredits(apiKey) {
+      try {
+        const resp = await fetch(`https://api.zerobounce.net/v2/getcredits?api_key=${encodeURIComponent(apiKey)}`);
+        if (!resp.ok) return null;
+        const data = await resp.json();
+        return data.Credits !== undefined ? data.Credits : null;
+      } catch(e) { return null; }
+    }
+
+    function zbUpdateStats(results) {
+      const counts = { valid:0, invalid:0, "catch-all":0, unknown:0 };
+      results.forEach(r => {
+        if (r.status === "valid") counts.valid++;
+        else if (r.status === "invalid" || r.status === "spamtrap" || r.status === "abuse" || r.status === "error") counts.invalid++;
+        else if (r.status === "catch-all") counts["catch-all"]++;
+        else counts.unknown++;
+      });
+      document.getElementById("zb-stat-valid").textContent = counts.valid + " Valid";
+      document.getElementById("zb-stat-invalid").textContent = counts.invalid + " Invalid";
+      document.getElementById("zb-stat-catchall").textContent = counts["catch-all"] + " Catch-all";
+      document.getElementById("zb-stat-unknown").textContent = counts.unknown + " Unknown";
+    }
+
+    function zbRenderResults(results) {
+      const list = document.getElementById("zb-results-list");
+      list.innerHTML = results.map(r => {
+        const lead = leads.find(l => l.id === r.leadId);
+        const name = lead ? escHtml(lead.name) : "Unknown";
+        const email = escHtml(r.email);
+        return `<div class="flex items-center gap-2 px-3 py-2 rounded-xl hover:bg-white transition-colors">
+          <div class="flex-1 min-w-0">
+            <div class="text-xs font-semibold text-foreground-800 truncate">${name}</div>
+            <div class="text-xs font-mono text-foreground-450 truncate">${email}</div>
+          </div>
+          ${zbStatusBadge(r.status)}
+        </div>`;
+      }).join("");
+      zbUpdateStats(results);
+      document.getElementById("zb-results-wrap").classList.remove("hidden");
+      if (typeof lucide !== "undefined") lucide.createIcons();
+    }
+
+    async function zbRunVerification() {
+      const apiKey = zbGetKey();
+      if (!apiKey) { alert("Please save your ZeroBounce API key first."); return; }
+
+      let targets = [];
+      if (zbMode === "single") {
+        if (!zbSelectedLeadId) { alert("Please select a lead first."); return; }
+        const lead = leads.find(l => l.id === zbSelectedLeadId);
+        if (!lead || !lead.email) { alert("Selected lead has no email."); return; }
+        targets = [lead];
+      } else if (zbMode === "all") {
+        targets = leads.filter(l => l.email);
+      } else {
+        const saved = zbLoadResults();
+        targets = leads.filter(l => l.email && !saved[l.id]);
+      }
+
+      if (targets.length === 0) { alert("No leads to verify."); return; }
+
+      // Check credits first
+      const credits = await zbCheckCredits(apiKey);
+      if (credits !== null && credits < targets.length) {
+        const proceed = confirm(`You have ${credits} credits but are verifying ${targets.length} emails. Proceed anyway?`);
+        if (!proceed) return;
+      }
+
+      const runBtn = document.getElementById("zb-run-btn");
+      runBtn.disabled = true;
+      runBtn.innerHTML = '<i data-lucide="loader" class="w-4 h-4 inline animate-spin"></i> Verifying…';
+      document.getElementById("zb-progress-wrap").classList.remove("hidden");
+      document.getElementById("zb-results-wrap").classList.add("hidden");
+      zbPendingResults = [];
+
+      for (let i = 0; i < targets.length; i++) {
+        const lead = targets[i];
+        document.getElementById("zb-progress-label").textContent = `Verifying ${i+1} of ${targets.length}: ${lead.email}`;
+        const pct = Math.round(((i+1)/targets.length)*100);
+        document.getElementById("zb-progress-pct").textContent = pct + "%";
+        document.getElementById("zb-progress-bar").style.width = pct + "%";
+
+        const result = await zbVerifyOne(lead.email, apiKey);
+        zbPendingResults.push({ leadId: lead.id, email: lead.email, ...result });
+
+        // Small delay to respect API rate limits
+        if (i < targets.length - 1) await new Promise(r => setTimeout(r, 300));
+      }
+
+      runBtn.disabled = false;
+      runBtn.innerHTML = '<i data-lucide="zap" class="w-4 h-4"></i> Run Verification';
+      document.getElementById("zb-progress-label").textContent = "Complete!";
+      zbRenderResults(zbPendingResults);
+      if (typeof lucide !== "undefined") lucide.createIcons();
+    }
+
+    function zbSavePendingResults() {
+      const saved = zbLoadResults();
+      zbPendingResults.forEach(r => { saved[r.leadId] = r; });
+      zbSaveResults(saved);
+      // Refresh the leads table to show new badges
+      renderAll();
+      const btn = document.getElementById("zb-save-results");
+      const orig = btn.innerHTML;
+      btn.innerHTML = '<i data-lucide="check" class="w-4 h-4"></i> Saved to Lead Records!';
+      btn.classList.replace("bg-system-green-400","bg-system-green-550");
+      setTimeout(() => {
+        btn.innerHTML = orig;
+        btn.classList.replace("bg-system-green-550","bg-system-green-400");
+        if (typeof lucide !== "undefined") lucide.createIcons();
+      }, 2000);
+    }
+
+    function openZbModal() {
+      zbPendingResults = [];
+      zbSelectedLeadId = null;
+      document.getElementById("zb-single-search").value = "";
+      document.getElementById("zb-single-list").innerHTML = "";
+      document.getElementById("zb-single-selected").classList.add("hidden");
+      document.getElementById("zb-progress-wrap").classList.add("hidden");
+      document.getElementById("zb-results-wrap").classList.add("hidden");
+      document.getElementById("zb-progress-bar").style.width = "0%";
+      zbSetMode("single");
+      zbUpdateKeyBadge();
+
+      // Populate API key field if already saved
+      const key = zbGetKey();
+      const input = document.getElementById("zb-api-key-input");
+      if (key) {
+        input.value = "••••••••••••••••••••••••••";
+      } else {
+        input.value = "";
+      }
+
+      // Check credits if key exists
+      if (key) {
+        const credRow = document.getElementById("zb-credits-row");
+        const credText = document.getElementById("zb-credits-text");
+        credRow.classList.remove("hidden");
+        credText.textContent = "Checking credits…";
+        zbCheckCredits(key).then(credits => {
+          credText.textContent = credits !== null ? `${credits} verifications remaining` : "Could not fetch credits";
+          if (typeof lucide !== "undefined") lucide.createIcons();
+        });
+      } else {
+        document.getElementById("zb-credits-row").classList.add("hidden");
+      }
+
+      document.getElementById("zb-modal").classList.add("active");
+      if (typeof lucide !== "undefined") lucide.createIcons();
+    }
+
+    function closeZbModal() {
+      document.getElementById("zb-modal").classList.remove("active");
     }
 
     // =================== READY TO SEND PANEL ===================
@@ -1753,6 +2140,47 @@ Licensed Insurance Agent
         document.body.removeChild(ta);
       });
     });
+
+    // Wire up ZeroBounce events
+    document.getElementById("btn-verify-emails").addEventListener("click", openZbModal);
+    document.getElementById("zb-modal-close").addEventListener("click", closeZbModal);
+    document.getElementById("zb-modal").addEventListener("click", function(e) { if(e.target===this) closeZbModal(); });
+
+    document.getElementById("zb-save-key").addEventListener("click", () => {
+      const val = document.getElementById("zb-api-key-input").value.trim();
+      if (!val || val.startsWith("•")) return;
+      localStorage.setItem(ZB_KEY_STORAGE, val);
+      document.getElementById("zb-api-key-input").value = "••••••••••••••••••••••••••";
+      zbUpdateKeyBadge();
+      const credRow = document.getElementById("zb-credits-row");
+      const credText = document.getElementById("zb-credits-text");
+      credRow.classList.remove("hidden");
+      credText.textContent = "Checking credits…";
+      zbCheckCredits(val).then(credits => {
+        credText.textContent = credits !== null ? `${credits} verifications remaining` : "Could not fetch credits (check your key)";
+        if (typeof lucide !== "undefined") lucide.createIcons();
+      });
+    });
+
+    document.getElementById("zb-clear-key").addEventListener("click", () => {
+      localStorage.removeItem(ZB_KEY_STORAGE);
+      document.getElementById("zb-api-key-input").value = "";
+      document.getElementById("zb-credits-row").classList.add("hidden");
+      zbUpdateKeyBadge();
+    });
+
+    document.getElementById("zb-verify-single-mode").addEventListener("click", () => zbSetMode("single"));
+    document.getElementById("zb-verify-all-mode").addEventListener("click", () => zbSetMode("all"));
+    document.getElementById("zb-verify-unverified-mode").addEventListener("click", () => zbSetMode("unverified"));
+
+    document.getElementById("zb-single-search").addEventListener("input", zbRenderSingleList);
+    document.getElementById("zb-deselect").addEventListener("click", () => {
+      zbSelectedLeadId = null;
+      document.getElementById("zb-single-selected").classList.add("hidden");
+    });
+
+    document.getElementById("zb-run-btn").addEventListener("click", zbRunVerification);
+    document.getElementById("zb-save-results").addEventListener("click", zbSavePendingResults);
   </script>
 </body>
 </html>
