@@ -722,34 +722,34 @@
 
   <script>
     // =================== DATA ===================
-    const BUSINESSES = [
-      {id:1,name:"Dale's Automotive",address:"3715 Derry St, Swatara, PA 17111",gpsLink:"https://maps.google.com/?q=3715+Derry+St,+Swatara,+PA+17111",type:"Auto Repair",owner:"Dale Gerberich",phone:"(717) 564-5110",email:"",employees:8,website:"autorepairharrisburgpa.com",notes:"BBB A+ rated, 30 years in business. Owner verified via BBB. Also contact John Gerberich (Office Manager). Text line: (717) 210-4604"},
-      {id:2,name:"Kinderman's Auto Repair",address:"2530 Walnut St, Harrisburg, PA 17103",gpsLink:"https://maps.google.com/?q=2530+Walnut+St,+Harrisburg,+PA+17103",type:"Auto Repair",owner:"Danton J. Staley",phone:"(717) 929-8361",email:"kindermansautorepair@comcast.net",employees:3,website:"kindermansautorepair.com",notes:"Founded 1978. Owner Danton Staley verified via AllBiz. Email verified. ~$500K annual revenue. Also: Dipesh Modi & Tim Bailey on staff."},
-      {id:3,name:"Equity Roofing LLC",address:"4614 Derry St, Harrisburg, PA 17111",gpsLink:"https://maps.google.com/?q=4614+Derry+St,+Harrisburg,+PA+17111",type:"Roofing",owner:"Allen Stoltzfus",phone:"(717) 629-0392",email:"",employees:6,website:"equityroofs.com",notes:"Owner Allen Stoltzfus verified via AB Newswire press listing. Family-owned. 4.9 stars on Google. Email via equityroofs.com contact form."},
-      {id:4,name:"Benaiahs Scratch Kitchen",address:"1708 Fairmont Dr, Harrisburg, PA 17111",gpsLink:"https://maps.google.com/?q=1708+Fairmont+Dr,+Harrisburg,+PA+17111",type:"Restaurant",owner:"Scott Kemp",phone:"(717) 982-6003",email:"benaiahskitchen@gmail.com",employees:12,website:"benaiahskitchen.com",notes:"Executive Chef/Owner Scott Kemp verified via OpenTable listing. Email verified from website. 4.8 stars, 579 reviews. Upscale scratch kitchen, strong revenue."},
-      {id:5,name:"Swatara Township Fire & Rescue",address:"599 Eisenhower Blvd, Harrisburg, PA 17111",gpsLink:"https://maps.google.com/?q=599+Eisenhower+Blvd,+Harrisburg,+PA+17111",type:"Fire/EMS",owner:"Michael Ibberson",phone:"(717) 564-2551",email:"",employees:45,website:"swatarafire.org",notes:"Fire Chief Michael Ibberson verified via Swatara Township official website. Covers Station 49 (Ober St) and Station 91-3 (Chambers Hill). Contact via swatarafire.org."},
-      {id:6,name:"Elmer's Landscaping",address:"2501 Paxton St Suite C, Harrisburg, PA 17111",gpsLink:"https://maps.google.com/?q=2501+Paxton+St+Suite+C,+Harrisburg,+PA+17111",type:"Landscaping",owner:"Emanuel Roblero",phone:"(717) 370-9151",email:"",employees:5,website:"elmerslandscaping.com",notes:"Owner name from website URL (emanuelroblero514.wixsite.com). Goes by Elmer. 5.0 stars, 26+ reviews. Snow removal + landscaping year-round."},
-      {id:7,name:"ROOFX Roofing",address:"6291 Lyters Ln, Harrisburg, PA 17111",gpsLink:"https://maps.google.com/?q=6291+Lyters+Ln,+Harrisburg,+PA+17111",type:"Roofing",owner:"",phone:"(717) 219-4179",email:"",employees:8,website:"",notes:"5.0 stars on Google, 140 reviews. Open 24 hours. Owner name not yet verified — call to confirm. Specializes in seamless replacements, repairs, and metal roofing."},
-      {id:8,name:"Tony and Sons Auto Repair",address:"2306 Susquehanna St, Harrisburg, PA 17110",gpsLink:"https://maps.google.com/?q=2306+Susquehanna+St,+Harrisburg,+PA+17110",type:"Auto Repair",owner:"Tony",phone:"(717) 443-0947",email:"",employees:4,website:"",notes:"Family-run garage, 4.6 stars, 93 reviews. Owner first name Tony confirmed by business name. Last name not yet verified — call to confirm."},
-      {id:9,name:"Swatara Restaurant and Bar",address:"5610 Derry St Suite 09, Harrisburg, PA 17111",gpsLink:"https://maps.google.com/?q=5610+Derry+St+Suite+09,+Harrisburg,+PA+17111",type:"Restaurant",owner:"",phone:"(717) 523-3922",email:"",employees:15,website:"",notes:"Nepalese/Indian cuisine in Derry Shopping Center. 4.6 stars, 189 reviews. Open until 2am — late night staff. Owner name needs verification via call."},
-      {id:10,name:"Lancaster Brewing Co. - Harrisburg",address:"469 Eisenhower Blvd, Harrisburg, PA 17111",gpsLink:"https://maps.google.com/?q=469+Eisenhower+Blvd,+Harrisburg,+PA+17111",type:"Restaurant",owner:"",phone:"(717) 564-4448",email:"",employees:35,website:"lancasterbrewing.com",notes:"Regional chain location. 4.5 stars, 1,019 reviews. Contact local general manager — call to get name. Strong employee count = good voluntary benefits opportunity."},
-      {id:11,name:"New Outlook Landscaping",address:"7515 Moyer Rd, Harrisburg, PA 17112",gpsLink:"https://maps.google.com/?q=7515+Moyer+Rd,+Harrisburg,+PA+17112",type:"Landscaping",owner:"",phone:"(717) 877-5018",email:"",employees:10,website:"",notes:"4.9 stars, 127 reviews. Specializes in outdoor patios and fireplaces, retaining walls. Higher-end clientele. Owner name needs verification."},
-      {id:12,name:"Details Landscape",address:"7451 Paxton St, Harrisburg, PA 17111",gpsLink:"https://maps.google.com/?q=7451+Paxton+St,+Harrisburg,+PA+17111",type:"Landscaping",owner:"",phone:"(717) 438-5296",email:"",employees:6,website:"",notes:"4.6 stars, 63 reviews. Specializes in lawn care, mulching, and design. Owner name needs verification — call to confirm."},
-      {id:13,name:"Celtic Metal Roofing",address:"131 Hoerner St, Harrisburg, PA 17103",gpsLink:"https://maps.google.com/?q=131+Hoerner+St,+Harrisburg,+PA+17103",type:"Roofing",owner:"",phone:"(717) 853-1344",email:"",employees:5,website:"",notes:"4.9 stars, 63 reviews. Metal roofing specialist. Owner name not yet verified — call to confirm."},
-      {id:14,name:"JP Construction Services",address:"2145 N 2nd St, Harrisburg, PA 17110",gpsLink:"https://maps.google.com/?q=2145+N+2nd+St,+Harrisburg,+PA+17110",type:"Roofing",owner:"",phone:"(717) 364-6407",email:"",employees:6,website:"",notes:"5.0 stars, 74 reviews. Shingle and rubber roofing. Owner name not yet verified — call to confirm. JP likely initials of owner."},
-      {id:15,name:"Joe's Automotive Services",address:"1513 N Cameron St, Harrisburg, PA 17103",gpsLink:"https://maps.google.com/?q=1513+N+Cameron+St,+Harrisburg,+PA+17103",type:"Auto Repair",owner:"Joe",phone:"(717) 233-1551",email:"",employees:5,website:"",notes:"4.6 stars, 201 reviews. Oil changes, inspections, engine and transmission work. Owner first name Joe confirmed by business name. Last name not verified."},
-      {id:16,name:"Greystone Public House",address:"2120 Colonial Rd, Harrisburg, PA 17112",gpsLink:"https://maps.google.com/?q=2120+Colonial+Rd,+Harrisburg,+PA+17112",type:"Restaurant",owner:"",phone:"(717) 829-9952",email:"",employees:20,website:"",notes:"4.5 stars, 1,312 reviews. Historic 18th-century tavern, upscale American dining. Strong revenue indicator. Owner/GM name needs verification."},
-      {id:17,name:"The Table Harrisburg",address:"3950 Tecport Dr, Harrisburg, PA 17111",gpsLink:"https://maps.google.com/?q=3950+Tecport+Dr,+Harrisburg,+PA+17111",type:"Restaurant",owner:"",phone:"(717) 836-7051",email:"",employees:18,website:"",notes:"4.4 stars, 1,918 reviews. Open 7am daily — large breakfast/brunch operation. High employee count. Owner/GM needs verification."},
-      {id:18,name:"Hemlock Landscaping",address:"3221 Spring St, Harrisburg, PA 17109",gpsLink:"https://maps.google.com/?q=3221+Spring+St,+Harrisburg,+PA+17109",type:"Landscaping",owner:"",phone:"(717) 447-8002",email:"",employees:5,website:"",notes:"4.5 stars, 37 reviews. Owner name not yet verified — call to confirm."},
-      {id:19,name:"Leeds Ltd Restaurant and Bar",address:"750 Eisenhower Blvd, Harrisburg, PA 17111",gpsLink:"https://maps.google.com/?q=750+Eisenhower+Blvd,+Harrisburg,+PA+17111",type:"Restaurant",owner:"",phone:"(717) 564-4654",email:"",employees:22,website:"",notes:"4.3 stars, 578 reviews. Fine dining seafood and wine. Large menu, extensive wine list. Strong revenue indicator. Owner/GM name needs verification."},
-      {id:20,name:"T & L Auto Repair Center",address:"1901 Derry St, Harrisburg, PA 17104",gpsLink:"https://maps.google.com/?q=1901+Derry+St,+Harrisburg,+PA+17104",type:"Auto Repair",owner:"",phone:"(717) 234-5141",email:"",employees:5,website:"",notes:"4.5 stars, 73 reviews. Inexpensive and reputable. T & L likely owner initials — call to confirm owner name."}
+    const SEED_LEADS = [
+      { id: 1, name: "Dale's Automotive", owner: "Dale Gerberich", phone: "(717) 564-5110", email: "", address: "3715 Derry St, Swatara, PA 17111", type: "Auto Repair", employees: 8, status: "Not Contacted", notes: "BBB A+ rated, 30 years in business. Owner verified via BBB. Text line: (717) 210-4604. Also contact John Gerberich (Office Manager).", website: "autorepairharrisburgpa.com", gpsLink: "https://maps.google.com/?q=3715+Derry+St,+Swatara,+PA+17111", followUpDate: "", lastContacted: "", priority: "Medium", contactMethod: "", activityLog: [] },
+      { id: 2, name: "Kinderman's Auto Repair", owner: "Danton J. Staley", phone: "(717) 929-8361", email: "kindermansautorepair@comcast.net", address: "2530 Walnut St, Harrisburg, PA 17103", type: "Auto Repair", employees: 3, status: "Not Contacted", notes: "Founded 1978. Owner Danton Staley verified via AllBiz. Email verified. ~$500K annual revenue.", website: "kindermansautorepair.com", gpsLink: "https://maps.google.com/?q=2530+Walnut+St,+Harrisburg,+PA+17103", followUpDate: "", lastContacted: "", priority: "Medium", contactMethod: "", activityLog: [] },
+      { id: 3, name: "Equity Roofing LLC", owner: "Allen Stoltzfus", phone: "(717) 629-0392", email: "", address: "4614 Derry St, Harrisburg, PA 17111", type: "Roofing", employees: 6, status: "Not Contacted", notes: "Owner Allen Stoltzfus verified via AB Newswire. Family-owned. 4.9 stars on Google. Contact via equityroofs.com.", website: "equityroofs.com", gpsLink: "https://maps.google.com/?q=4614+Derry+St,+Harrisburg,+PA+17111", followUpDate: "", lastContacted: "", priority: "Medium", contactMethod: "", activityLog: [] },
+      { id: 4, name: "Benaiahs Scratch Kitchen", owner: "Scott Kemp", phone: "(717) 982-6003", email: "benaiahskitchen@gmail.com", address: "1708 Fairmont Dr, Harrisburg, PA 17111", type: "Restaurant", employees: 12, status: "Not Contacted", notes: "Executive Chef/Owner Scott Kemp verified via OpenTable. Email verified. 4.8 stars, 579 reviews. Upscale scratch kitchen.", website: "benaiahskitchen.com", gpsLink: "https://maps.google.com/?q=1708+Fairmont+Dr,+Harrisburg,+PA+17111", followUpDate: "", lastContacted: "", priority: "Medium", contactMethod: "", activityLog: [] },
+      { id: 5, name: "Swatara Township Fire & Rescue", owner: "Michael Ibberson", phone: "(717) 564-2551", email: "", address: "599 Eisenhower Blvd, Harrisburg, PA 17111", type: "Fire/EMS", employees: 45, status: "Not Contacted", notes: "Fire Chief Michael Ibberson verified via Swatara Township official website. Covers Station 49 and Station 91-3.", website: "swatarafire.org", gpsLink: "https://maps.google.com/?q=599+Eisenhower+Blvd,+Harrisburg,+PA+17111", followUpDate: "", lastContacted: "", priority: "Medium", contactMethod: "", activityLog: [] },
+      { id: 6, name: "Elmer's Landscaping", owner: "Emanuel Roblero", phone: "(717) 370-9151", email: "", address: "2501 Paxton St Suite C, Harrisburg, PA 17111", type: "Landscaping", employees: 5, status: "Not Contacted", notes: "Owner goes by Elmer. 5.0 stars, 26+ reviews. Snow removal and landscaping year-round.", website: "elmerslandscaping.com", gpsLink: "https://maps.google.com/?q=2501+Paxton+St+Suite+C,+Harrisburg,+PA+17111", followUpDate: "", lastContacted: "", priority: "Medium", contactMethod: "", activityLog: [] },
+      { id: 7, name: "ROOFX Roofing", owner: "", phone: "(717) 219-4179", email: "", address: "6291 Lyters Ln, Harrisburg, PA 17111", type: "Roofing", employees: 8, status: "Not Contacted", notes: "5.0 stars on Google, 140 reviews. Open 24 hours. Owner name not yet verified — call to confirm.", website: "", gpsLink: "https://maps.google.com/?q=6291+Lyters+Ln,+Harrisburg,+PA+17111", followUpDate: "", lastContacted: "", priority: "Medium", contactMethod: "", activityLog: [] },
+      { id: 8, name: "Tony and Sons Auto Repair", owner: "Tony", phone: "(717) 443-0947", email: "", address: "2306 Susquehanna St, Harrisburg, PA 17110", type: "Auto Repair", employees: 4, status: "Not Contacted", notes: "Family-run garage, 4.6 stars, 93 reviews. Owner first name Tony confirmed. Last name needs verification.", website: "", gpsLink: "https://maps.google.com/?q=2306+Susquehanna+St,+Harrisburg,+PA+17110", followUpDate: "", lastContacted: "", priority: "Medium", contactMethod: "", activityLog: [] },
+      { id: 9, name: "Swatara Restaurant and Bar", owner: "", phone: "(717) 523-3922", email: "", address: "5610 Derry St Suite 09, Harrisburg, PA 17111", type: "Restaurant", employees: 15, status: "Not Contacted", notes: "Nepalese/Indian cuisine. 4.6 stars, 189 reviews. Open until 2am. Owner name needs verification via call.", website: "", gpsLink: "https://maps.google.com/?q=5610+Derry+St+Suite+09,+Harrisburg,+PA+17111", followUpDate: "", lastContacted: "", priority: "Medium", contactMethod: "", activityLog: [] },
+      { id: 10, name: "Lancaster Brewing Co. - Harrisburg", owner: "", phone: "(717) 564-4448", email: "", address: "469 Eisenhower Blvd, Harrisburg, PA 17111", type: "Restaurant", employees: 35, status: "Not Contacted", notes: "4.5 stars, 1,019 reviews. Contact local general manager — call to get name. Strong employee count for voluntary benefits.", website: "lancasterbrewing.com", gpsLink: "https://maps.google.com/?q=469+Eisenhower+Blvd,+Harrisburg,+PA+17111", followUpDate: "", lastContacted: "", priority: "Medium", contactMethod: "", activityLog: [] },
+      { id: 11, name: "New Outlook Landscaping", owner: "", phone: "(717) 877-5018", email: "", address: "7515 Moyer Rd, Harrisburg, PA 17112", type: "Landscaping", employees: 10, status: "Not Contacted", notes: "4.9 stars, 127 reviews. Specializes in outdoor patios, retaining walls. Higher-end clientele. Owner needs verification.", website: "", gpsLink: "https://maps.google.com/?q=7515+Moyer+Rd,+Harrisburg,+PA+17112", followUpDate: "", lastContacted: "", priority: "Medium", contactMethod: "", activityLog: [] },
+      { id: 12, name: "Details Landscape", owner: "", phone: "(717) 438-5296", email: "", address: "7451 Paxton St, Harrisburg, PA 17111", type: "Landscaping", employees: 6, status: "Not Contacted", notes: "4.6 stars, 63 reviews. Lawn care, mulching, design. Owner needs verification — call to confirm.", website: "", gpsLink: "https://maps.google.com/?q=7451+Paxton+St,+Harrisburg,+PA+17111", followUpDate: "", lastContacted: "", priority: "Medium", contactMethod: "", activityLog: [] },
+      { id: 13, name: "Celtic Metal Roofing", owner: "", phone: "(717) 853-1344", email: "", address: "131 Hoerner St, Harrisburg, PA 17103", type: "Roofing", employees: 5, status: "Not Contacted", notes: "4.9 stars, 63 reviews. Metal roofing specialist. Owner name not yet verified — call to confirm.", website: "", gpsLink: "https://maps.google.com/?q=131+Hoerner+St,+Harrisburg,+PA+17103", followUpDate: "", lastContacted: "", priority: "Medium", contactMethod: "", activityLog: [] },
+      { id: 14, name: "JP Construction Services", owner: "", phone: "(717) 364-6407", email: "", address: "2145 N 2nd St, Harrisburg, PA 17110", type: "Roofing", employees: 6, status: "Not Contacted", notes: "5.0 stars, 74 reviews. Shingle and rubber roofing. JP likely owner initials — call to confirm.", website: "", gpsLink: "https://maps.google.com/?q=2145+N+2nd+St,+Harrisburg,+PA+17110", followUpDate: "", lastContacted: "", priority: "Medium", contactMethod: "", activityLog: [] },
+      { id: 15, name: "Joe's Automotive Services", owner: "Joe", phone: "(717) 233-1551", email: "", address: "1513 N Cameron St, Harrisburg, PA 17103", type: "Auto Repair", employees: 5, status: "Not Contacted", notes: "4.6 stars, 201 reviews. Oil changes, inspections, engine and transmission work. Last name not verified.", website: "", gpsLink: "https://maps.google.com/?q=1513+N+Cameron+St,+Harrisburg,+PA+17103", followUpDate: "", lastContacted: "", priority: "Medium", contactMethod: "", activityLog: [] },
+      { id: 16, name: "Greystone Public House", owner: "", phone: "(717) 829-9952", email: "", address: "2120 Colonial Rd, Harrisburg, PA 17112", type: "Restaurant", employees: 20, status: "Not Contacted", notes: "4.5 stars, 1,312 reviews. Historic 18th-century tavern, upscale American dining. Owner/GM name needs verification.", website: "", gpsLink: "https://maps.google.com/?q=2120+Colonial+Rd,+Harrisburg,+PA+17112", followUpDate: "", lastContacted: "", priority: "Medium", contactMethod: "", activityLog: [] },
+      { id: 17, name: "The Table Harrisburg", owner: "", phone: "(717) 836-7051", email: "", address: "3950 Tecport Dr, Harrisburg, PA 17111", type: "Restaurant", employees: 18, status: "Not Contacted", notes: "4.4 stars, 1,918 reviews. Open 7am daily, large breakfast/brunch operation. High employee count. Owner/GM needs verification.", website: "", gpsLink: "https://maps.google.com/?q=3950+Tecport+Dr,+Harrisburg,+PA+17111", followUpDate: "", lastContacted: "", priority: "Medium", contactMethod: "", activityLog: [] },
+      { id: 18, name: "Hemlock Landscaping", owner: "", phone: "(717) 447-8002", email: "", address: "3221 Spring St, Harrisburg, PA 17109", type: "Landscaping", employees: 5, status: "Not Contacted", notes: "4.5 stars, 37 reviews. Owner name not yet verified — call to confirm.", website: "", gpsLink: "https://maps.google.com/?q=3221+Spring+St,+Harrisburg,+PA+17109", followUpDate: "", lastContacted: "", priority: "Medium", contactMethod: "", activityLog: [] },
+      { id: 19, name: "Leeds Ltd Restaurant and Bar", owner: "", phone: "(717) 564-4654", email: "", address: "750 Eisenhower Blvd, Harrisburg, PA 17111", type: "Restaurant", employees: 22, status: "Not Contacted", notes: "4.3 stars, 578 reviews. Fine dining seafood and wine bar. Strong revenue indicator. Owner/GM name needs verification.", website: "", gpsLink: "https://maps.google.com/?q=750+Eisenhower+Blvd,+Harrisburg,+PA+17111", followUpDate: "", lastContacted: "", priority: "Medium", contactMethod: "", activityLog: [] },
+      { id: 20, name: "T & L Auto Repair Center", owner: "", phone: "(717) 234-5141", email: "", address: "1901 Derry St, Harrisburg, PA 17104", type: "Auto Repair", employees: 5, status: "Not Contacted", notes: "4.5 stars, 73 reviews. T & L likely owner initials — call to confirm owner name.", website: "", gpsLink: "https://maps.google.com/?q=1901+Derry+St,+Harrisburg,+PA+17104", followUpDate: "", lastContacted: "", priority: "Medium", contactMethod: "", activityLog: [] }
     ];
 
     const STATUSES = ["Not Contacted","New","Contacted","Follow-Up","Proposal Sent","Closed – Won","Closed – Lost"];
     const PRIORITIES = ["High","Medium","Low"];
     const STORAGE_KEY = "prospecting_leads_v1";
     const PAGE_SIZE = 20;
-    const TODAY = "2026-06-24";
+    const TODAY = "2026-06-26";
 
     let leads = [];
     let filteredLeads = [];
@@ -761,40 +761,60 @@
     let currentEditId = null;
 
     // =================== STORAGE ===================
-    function saveLeads() {
+    function _storageGet(key) {
       try {
         if (window.AppSDK && window.AppSDK.storage) {
-          window.AppSDK.storage.setItem(STORAGE_KEY, JSON.stringify(leads));
-        } else {
-          localStorage.setItem(STORAGE_KEY, JSON.stringify(leads));
+          return window.AppSDK.storage.getItem(key);
         }
-      } catch(e) { localStorage.setItem(STORAGE_KEY, JSON.stringify(leads)); }
+      } catch(e) {}
+      try { return localStorage.getItem(key); } catch(e) { return null; }
+    }
+
+    function _storageSet(key, value) {
+      try {
+        if (window.AppSDK && window.AppSDK.storage) {
+          window.AppSDK.storage.setItem(key, value);
+          return;
+        }
+      } catch(e) {}
+      try { localStorage.setItem(key, value); } catch(e) {}
+    }
+
+    function saveLeads() {
+      _storageSet(STORAGE_KEY, JSON.stringify(leads));
     }
 
     function loadLeads() {
-      let saved = null;
-      try {
-        if (window.AppSDK && window.AppSDK.storage) {
-          saved = window.AppSDK.storage.getItem(STORAGE_KEY);
-        } else {
-          saved = localStorage.getItem(STORAGE_KEY);
-        }
-      } catch(e) { saved = localStorage.getItem(STORAGE_KEY); }
+      let saved = _storageGet(STORAGE_KEY);
+      let parsed = null;
 
       if (saved) {
-        const parsed = JSON.parse(saved);
+        try { parsed = JSON.parse(saved); } catch(e) { parsed = null; }
+      }
+
+      // If no saved data, or saved data is empty array, seed from SEED_LEADS
+      if (!parsed || !Array.isArray(parsed) || parsed.length === 0) {
+        leads = SEED_LEADS.map(l => ({...l}));
+        saveLeads();
+      } else {
+        // Use saved data — merge with SEED_LEADS to ensure any new seed fields are present
         const savedMap = {};
         parsed.forEach(l => { savedMap[l.id] = l; });
-        leads = BUSINESSES.map(b => {
-          if (savedMap[b.id]) return { ...b, ...savedMap[b.id], notes: savedMap[b.id].notes || b.notes };
-          return { ...b, status:"Not Contacted", followUpDate:"", lastContacted:"", priority:"Medium", contactMethod:"", activityLog:[] };
+
+        leads = SEED_LEADS.map(seed => {
+          if (savedMap[seed.id]) {
+            // Merge: saved data takes priority, but fill in any missing fields from seed
+            const merged = { ...seed, ...savedMap[seed.id] };
+            // Preserve notes from saved if present, otherwise use seed notes
+            if (!savedMap[seed.id].notes && seed.notes) merged.notes = seed.notes;
+            return merged;
+          }
+          return { ...seed };
         });
-        // add custom leads (id > 20)
-        parsed.filter(l => l.id > 20 && !BUSINESSES.find(b => b.id === l.id)).forEach(l => leads.push(l));
-      } else {
-        leads = BUSINESSES.map(b => ({
-          ...b, status:"Not Contacted", followUpDate:"", lastContacted:"", priority:"Medium", contactMethod:"", activityLog:[]
-        }));
+
+        // Also add any custom leads (ids not in SEED_LEADS)
+        const seedIds = new Set(SEED_LEADS.map(s => s.id));
+        parsed.filter(l => !seedIds.has(l.id)).forEach(l => leads.push(l));
       }
     }
 
@@ -1113,15 +1133,18 @@
       // Website
       const websiteEl = document.getElementById("modal-website");
       const noWebsiteEl = document.getElementById("modal-no-website");
+      const websiteWrap = document.getElementById("modal-website-wrap");
       if (lead.website) {
         const url = lead.website.startsWith("http") ? lead.website : "https://" + lead.website;
         websiteEl.textContent = lead.website;
         websiteEl.href = url;
         websiteEl.classList.remove("hidden");
         noWebsiteEl.classList.add("hidden");
+        websiteWrap.classList.remove("hidden");
       } else {
         websiteEl.classList.add("hidden");
         noWebsiteEl.classList.remove("hidden");
+        websiteWrap.classList.remove("hidden");
       }
 
       // Employees
